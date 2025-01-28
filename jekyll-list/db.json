@@ -1,0 +1,18 @@
+---
+layout: none
+---
+[
+{%- for item in site.posts %}
+    {
+        "name":{{- item.name | jsonify }},
+        "author":{{- item.author | jsonify }},
+        "link":{{- item.link | jsonify }},
+        "demo":{{- item.demo | jsonify }},
+        "description":{{- item.description | jsonify }},
+        "notes":{{- item.notes | jsonify }},
+        "artifacts":{{- item.artifacts | jsonify }},
+        "tags":{{- item.tags | jsonify }},
+        "level":{{- item.level | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+{% endfor -%}
+]

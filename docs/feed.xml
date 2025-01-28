@@ -1,17 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.0">Jekyll</generator><link href="http://localhost:4000/jekyll-list/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll-list/" rel="alternate" type="text/html" /><updated>2025-01-28T21:31:14+00:00</updated><id>http://localhost:4000/jekyll-list/feed.xml</id><title type="html">Sortable lists for GH pages</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-01-28T20:12:35+00:00</published><updated>2025-01-28T20:12:35+00:00</updated><id>http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.0">Jekyll</generator><link href="http://localhost:4000/jekyll-list/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll-list/" rel="alternate" type="text/html" /><updated>2025-01-28T22:25:25+00:00</updated><id>http://localhost:4000/jekyll-list/feed.xml</id><title type="html">Sortable lists for GH pages</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Meeblip Micro</title><link href="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/meeblip-micro.html" rel="alternate" type="text/html" title="Meeblip Micro" /><published>2025-01-28T20:12:35+00:00</published><updated>2025-01-28T20:12:35+00:00</updated><id>http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/meeblip-micro</id><content type="html" xml:base="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/meeblip-micro.html"><![CDATA[<ul>
+  <li>Name: <strong>Meeblip Micro</strong></li>
+  <li>Author: <strong>Meeblip</strong></li>
+  <li>Link: <a href="https://github.com/MeeBlip/meeblip-circuits">https://github.com/MeeBlip/meeblip-circuits</a></li>
+  <li>Demo: <a href="https://www.youtube.com/watch?v=s0zFMcL7Ej8">https://www.youtube.com/watch?v=s0zFMcL7Ej8</a></li>
+  <li>Description: <strong>Hackable monophonic synth based on atmega32.</strong></li>
+  <li>Notes: <strong>Normally Micro has no it is own controls. It should be controlled by MIDI. Meeblip SE is quite the same synth with physical controls.</strong></li>
+  <li>Artifacts: <strong>{“Schematic”=&gt;true}{“PCB”=&gt;true}{“BOM”=&gt;false}{“FW”=&gt;true}{“Docs”=&gt;false}{“Enclosure”=&gt;false}</strong></li>
+  <li>Tags: <strong>DigitalMonophonicMIDIAVR</strong></li>
+  <li>Level: <strong>newbe</strong></li>
+</ul>]]></content><author><name>Meeblip</name></author><category term="jekyll" /><category term="update" /><category term="Digital" /><category term="Monophonic" /><category term="MIDI" /><category term="AVR" /><summary type="html"><![CDATA[Hackable monophonic synth based on atmega32.]]></summary></entry><entry><title type="html">Norns shield</title><link href="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/norns.html" rel="alternate" type="text/html" title="Norns shield" /><published>2025-01-28T20:12:35+00:00</published><updated>2025-01-28T20:12:35+00:00</updated><id>http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/norns</id><content type="html" xml:base="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/norns.html"><![CDATA[<ul>
+  <li>Name: <strong>Norns Shield</strong></li>
+  <li>Author: <strong>Monome</strong></li>
+  <li>Link: <a href="https://github.com/monome/norns-shield">https://github.com/monome/norns-shield</a></li>
+  <li>Demo: <a href="https://www.youtube.com/watch?v=E5XIEVon4Ak">https://www.youtube.com/watch?v=E5XIEVon4Ak</a></li>
+  <li>Description: <strong>Norns is an open, dynamic instrument creation platform and musical computer.</strong></li>
+  <li>Notes: <strong>Shield is a DIY circuit which extends a normal Raspberry Pi, turning it into a norns.</strong></li>
+  <li>Artifacts: <strong>{“Schematic”=&gt;true}{“PCB”=&gt;false}{“BOM”=&gt;true}{“FW”=&gt;true}{“Docs”=&gt;false}{“Enclosure”=&gt;false}</strong></li>
+  <li>Tags: <strong>DigitalKitMIDIRaspberry</strong></li>
+  <li>Level: <strong>advanced</strong></li>
+</ul>]]></content><author><name>Monome</name></author><category term="jekyll" /><category term="update" /><category term="Digital" /><category term="Kit" /><category term="MIDI" /><category term="Raspberry" /><summary type="html"><![CDATA[Norns is an open, dynamic instrument creation platform and musical computer.]]></summary></entry><entry><title type="html">Shruthi</title><link href="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/shruthi-1.html" rel="alternate" type="text/html" title="Shruthi" /><published>2025-01-28T20:12:35+00:00</published><updated>2025-01-28T20:12:35+00:00</updated><id>http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/shruthi-1</id><content type="html" xml:base="http://localhost:4000/jekyll-list/jekyll/update/2025/01/28/shruthi-1.html"><![CDATA[<ul>
+  <li>Name: <strong>Shruthi</strong></li>
+  <li>Author: <strong>Mutable Instruments</strong></li>
+  <li>Link: <a href="https://mutable-instruments.net/archive/shruthi/build/">https://mutable-instruments.net/archive/shruthi/build/</a></li>
+  <li>Demo: <a href="https://www.youtube.com/watch?v=PVcmQ_h4bx8">https://www.youtube.com/watch?v=PVcmQ_h4bx8</a></li>
+  <li>Description: <strong>Hybrid synthesizer with digital generators and swappable analog filter boards.</strong></li>
+  <li>Notes: <strong>The Shruthi contains two section: a digital section (“control board” or “digital board”), containing the display, main microcontroller, switches and pots ; and an analog section (“filter board”) hosting the VCF, VCA, input mixer and the output stage. Several variants of the filter board are available to provide a broad range of sounds.
+There is also Shruti XT option with additional physical controls.</strong></li>
+  <li>Artifacts: <strong>{“Schematic”=&gt;true}{“PCB”=&gt;true}{“BOM”=&gt;true}{“FW”=&gt;true}{“Docs”=&gt;true}{“Enclosure”=&gt;”true (via 3rd party)”}</strong></li>
+  <li>Tags: <strong>DigitalAnalogMonophonicMIDIAVR</strong></li>
+  <li>Level: <strong>advanced</strong></li>
+</ul>]]></content><author><name>Mutable Instruments</name></author><category term="jekyll" /><category term="update" /><category term="Digital" /><category term="Analog" /><category term="Monophonic" /><category term="MIDI" /><category term="AVR" /><summary type="html"><![CDATA[Hybrid synthesizer with digital generators and swappable analog filter boards.]]></summary></entry></feed>
