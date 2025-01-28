@@ -32,6 +32,7 @@ github_username:  jekyll
 # Build settings
 destination: ../docs
 theme: minima
+baseurl: /jekyll-list/
 plugins:
   - jekyll-feed
 
