@@ -8,7 +8,7 @@ name: Meeblip SE
 author: Meeblip
 link: https://github.com/MeeBlip/meeblip-circuits
 demo: https://www.youtube.com/watch?v=YFKGGdwSR2o
-pic: /pics/meeblip-se.jpg
+pic: ../pics/meeblip-se.jpg
 description: "Hackable monophonic synth based on atmega32."
 notes: "Very same synth as Meeblip Micro, but with knobs and switches. Here it is MIDI mapping"
 artifacts:

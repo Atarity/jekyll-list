@@ -8,7 +8,7 @@ name: Lil CMOS toolbox
 author: Planeteatrr
 link: https://github.com/diysynth/STANDALONE-DEVICES
 demo: https://www.youtube.com/watch?v=F06fM2n9Yoc
-pic: /pics/lil-cmos-toolbox.jpg
+pic: ../pics/lil-cmos-toolbox.jpg
 description: "CMOS-based semi-modular synthesizer."
 notes: "The idea started as an expander for the Behringer Neutron. I always felt that the Neutron is lacking some kind of modulation for the oscillator section. So the Toolbox provides a ring-modulator (quite similar to the one in the Korg MS-20) and a sub-oscillator, to fulfill my needs. Here is a list of the features:
 - Ring-modulator

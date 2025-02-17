@@ -8,7 +8,7 @@ name: Meeblip Micro
 author: Meeblip
 link: https://github.com/MeeBlip/meeblip-circuits
 demo: https://www.youtube.com/watch?v=s0zFMcL7Ej8
-pic: /pics/meeblip-micro.jpg
+pic: ../pics/meeblip-micro.jpg
 description: "Hackable monophonic synth based on atmega32."
 notes: "Normally Micro has no it is own controls. It should be controlled by MIDI. Meeblip SE is quite the same synth with physical controls."
 artifacts:

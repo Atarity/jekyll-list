@@ -8,7 +8,7 @@ name: Portable synth
 author: Prajwal Tumkur Mahesh
 link: https://github.com/prajwal1121/Portable-Synth
 demo: https://www.youtube.com/watch?v=yj9AeDa9qw8
-pic: /pics/portable-synth.jpg
+pic: ../pics/portable-synth.jpg
 description: "OP-1 style portable groovebox based around Teensy 4."
 notes: "Work in progress, but 2nd version of hardware already published. "
 artifacts:

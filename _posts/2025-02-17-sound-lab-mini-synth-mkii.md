@@ -8,7 +8,7 @@ name: Sound Lab Mini-Synth MkII
 author: Ray Wilson
 link: http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871
 demo: https://www.youtube.com/watch?v=-ijNzWQH0dk
-pic: /pics/sound-lab-mini-synth-mkii.jpg
+pic: ../pics/sound-lab-mini-synth-mkii.jpg
 description: "Full analog Ray Wilson's synth. Descendant of Sound Lab Mini-Synth."
 notes: "'- Two Musically Accurate VCOs With 1V/Octave Tracking
 - White Noise Generator

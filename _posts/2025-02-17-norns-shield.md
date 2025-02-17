@@ -8,7 +8,7 @@ name: Norns shield
 author: Monome
 link: https://github.com/monome/norns-shield
 demo: https://www.youtube.com/watch?v=E5XIEVon4Ak
-pic: /pics/norns-shield.jpg
+pic: ../pics/norns-shield.jpg
 description: "Norns is an open, dynamic instrument creation platform and musical computer. "
 notes: "Shield is a DIY circuit which extends a normal Raspberry Pi, turning it into a norns. "
 artifacts:

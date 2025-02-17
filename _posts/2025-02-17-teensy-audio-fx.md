@@ -8,7 +8,7 @@ name: Teensy Audio FX
 author: Matt Venn
 link: https://github.com/mattvenn/teensy-audio-fx
 demo: https://www.youtube.com/watch?v=zHr6EKKnGfY
-pic: /pics/teensy-audio-fx.jpg
+pic: ../pics/teensy-audio-fx.jpg
 description: "Playable effects modeled on the Teenage Engineering PO series"
 notes: "'- A Teensy 4 based FX unit with Pocket Operator style and playability.
 - 12 knobs, 4 buttons each with LED, and 4 LEDs showing automation cycle.

@@ -8,7 +8,7 @@ name: Mini Dexed
 author: Probonopd
 link: https://github.com/probonopd/MiniDexed
 demo: https://www.youtube.com/watch?v=Z3t94ceMHJo
-pic: /pics/mini-dexed.jpg
+pic: ../pics/mini-dexed.jpg
 description: "FM synthesizer closely modeled on the famous DX7"
 notes: "MiniDexed is a FM synthesizer closely modeled on the famous DX7 by a well-known Japanese manufacturer running on a bare metal Raspberry Pi (without a Linux kernel or operating system). On Raspberry Pi 2 and larger, it can run 8 tone generators, not unlike the TX816/TX802 (8 DX7 instances without the keyboard in one box).
 

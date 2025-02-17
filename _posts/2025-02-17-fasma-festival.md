@@ -8,7 +8,7 @@ name: Fasma Festival
 author: Tomash GHZ
 link: https://tomashg.com/?p=1324
 demo: https://www.youtube.com/watch?v=E9JRIe1dBe0
-pic: /pics/fasma-festival.jpg
+pic: ../pics/fasma-festival.jpg
 description: "Yet another Teensy drum machine with clock sync."
 notes: "'- 4 voices (Kick, Tom, Snare and Hat) 2 Digital Oscillator modules, 2 PCM sample playback.
 - 4 parameter controls per each voice. Pitch, Decay, Pitch Modulation and Distortion.

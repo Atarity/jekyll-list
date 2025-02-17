@@ -8,7 +8,7 @@ name: Meebleeps Freaq FM
 author: Meebleeps
 link: https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth
 demo: https://www.youtube.com/watch?v=KD6IrcmMkoA
-pic: /pics/meebleeps-freaq-fm.jpg
+pic: ../pics/meebleeps-freaq-fm.jpg
 description: "Dual-Voice 2 operator 8-bit FM Arduino Synth with 2-track generative sequencer, Mozzi library, Volca form-factor."
 notes: "Voices
 - 2 independent FM voices

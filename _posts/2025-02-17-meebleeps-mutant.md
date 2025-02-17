@@ -8,7 +8,7 @@ name: Meebleeps Mutant
 author: Meebleeps
 link: https://github.com/Meebleeps/MeeBleeps-Mutant-Synth
 demo: https://www.youtube.com/watch?v=d2Lml1Z9uWc
-pic: /pics/meebleeps-mutant.jpg
+pic: ../pics/meebleeps-mutant.jpg
 description: "8-Bit 2-oscillator subtractive Arduino synth for generative techno, using Mozzi library, in Volca form-factor."
 notes: "Synth Voice Features
 - 2 saw oscillators

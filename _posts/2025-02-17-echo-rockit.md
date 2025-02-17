@@ -8,7 +8,7 @@ name: Echo Rockit
 author: Ray Wilson
 link: http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871
 demo: https://www.youtube.com/watch?v=BBRA-ZliXaA
-pic: /pics/echo-rockit.jpg
+pic: ../pics/echo-rockit.jpg
 description: "Small, portable synth / effect processor."
 notes: "The device is somehow similar to Korg Monotron Delay, but it has more modulation options."
 artifacts:

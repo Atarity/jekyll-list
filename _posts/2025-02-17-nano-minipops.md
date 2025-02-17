@@ -8,7 +8,7 @@ name: Nano minipops
 author: Jan Ostman
 link: https://github.com/NANOmodules/NANO-Minipops
 demo: https://www.youtube.com/watch?v=RJu-DWOXwls
-pic: /pics/nano-minipops.jpg
+pic: ../pics/nano-minipops.jpg
 description: "Korg minipops made around Arduino."
 notes: "The hardware consists in an Arduino Uno including it shield with 9 slide switches, 2 rotary potentiometers and 1 LED. Software in the CODE folder contains all the necessary to convert your Arduino Uno in a Minipops drum box."
 artifacts:
