@@ -615,7 +615,7 @@
         "author":"Mutable Instruments",
         "link":"https://mutable-instruments.net/archive/",
         "demo":"https://www.youtube.com/watch?v=zZLmu_DnRBs",
-        "picture":"/pics/anushri.jpg",
+        "picture":"../pics/anushri.jpg",
         "description":"DIY digitally controlled analog monosynth.",
         "notes":"Anushri is a monophonic synthesizer with an all-analog signal path, paired with a lo-fi digital drum synthesizer. These two sections are controlled by an on-board sequencer/arpeggiator, featuring generative drum pattern sequencing. Anushri is open to the modular world thanks to its analog patching area.",
         "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
