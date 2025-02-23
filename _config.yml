@@ -33,7 +33,7 @@ baseurl: /jekyll-list # the subpath of your site, e.g. /blog
 source: .
 destination: ./docs
 permalink: /:categories/:title
-theme: minima
+theme:
 plugins:
   - jekyll-feed
 
