@@ -58,7 +58,7 @@ class JList {
     buildHeader() {
 
         let header = document.createElement("header");
-        header.innerHTML = `<h1><a href="/" class="title"></a></h1>
+        header.innerHTML = `<h1><a href="#" class="title"></a></h1>
             <input type="search" placeholder="search..." class="searchbox" /><span class="filter-toggle">filter</span>`;
 
         this.wrap.appendChild(header);

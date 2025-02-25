@@ -1,239 +1,7 @@
 [
-    {
-        "name":"Plinky",
-        "author":"Alex \"mmalex\" Evans",
-        "link":"https://github.com/plinkysynth/plinky_public/tree/main",
-        "demo":"https://www.youtube.com/watch?v=us__mX0_Aqk",
-        "picture":"../pics/plinky.jpg",
-        "description":"8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds",
-        "notes":"It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth over CV or MIDI, with line-level stereo input and a headphone output, all powered by USB.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
-        "tags":["Digital","Fx","MIDI","Modular","Kit"],
-        "level":"Advanced"
-    },
 
     {
-        "name":"Paper Bits",
-        "author":"Wolfgang Spahn",
-        "link":"https://paperpcb.dernulleffekt.de/doku.php?id=paper_bits:paper_bits_main",
-        "demo":"https://www.youtube.com/watch?v=4CEhR68YwA8",
-        "picture":"../pics/paper-bits.jpg",
-        "description":"Small, modular synthesiser system. Voltage controlled, stripboard compatible.",
-        "notes":"Currently, there are 19 modules published that can be put together in different ways.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Digital","Analog","Modular"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"LMN-3",
-        "author":"Fundamental Frequency",
-        "link":"https://github.com/FundamentalFrequency",
-        "demo":"https://www.youtube.com/watch?v=h5UmPTttN1s",
-        "picture":"../pics/lmn-3.jpg",
-        "description":"OP-1 inspired DAW-in-a-box",
-        "notes":"Raspberry Pi and Teensy -based digital synth with wide range of digital audio workstation features and OP-1 -like interface.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
-        "tags":["Digital","Teensy","Raspberry"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Mini Dexed",
-        "author":"Probonopd",
-        "link":"https://github.com/probonopd/MiniDexed",
-        "demo":"https://www.youtube.com/watch?v=Z3t94ceMHJo",
-        "picture":"../pics/mini-dexed.jpg",
-        "description":"FM synthesizer closely modeled on the famous DX7",
-        "notes":"MiniDexed is a FM synthesizer closely modeled on the famous DX7 by a well-known Japanese manufacturer running on a bare metal Raspberry Pi (without a Linux kernel or operating system). On Raspberry Pi 2 and larger, it can run 8 tone generators, not unlike the TX816/TX802 (8 DX7 instances without the keyboard in one box).\n- Uses Synth_Dexed with circle-stdlib - SD card contents can be downloaded from GitHub Releases - Runs on all Raspberry Pi models (except Pico); see below for details - Produces sound on the headphone jack, HDMI display or audio extractor (better), or a dedicated DAC (best) - Supports multiple voices through Program Change and Bank Change LSB/MSB MIDI messages - Loads voices from .syx files from SD card (e.g., using getsysex.sh or from Dexed_cart_1.0.zip) - Menu structure on optional HD44780 display and rotary encoder - Runs up to 8 Dexed instances simultaneously (like in a TX816) and mixes their output together - Allows for each Dexed instance to be detuned and stereo shifted - Allows to configure multiple Dexed instances through performance.ini files - Compressor effect - Reverb effect - Voices can be edited over MIDI, e.g., using the synthmata online editor (requires additional hardware)",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
-        "tags":["Digital","Raspberry","MIDI"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Coron DS7 (DS8)",
-        "author":"Paparail Synth Labs",
-        "link":"http://m.bareille.free.fr/ds7clone/ds8.htm",
-        "demo":"https://www.youtube.com/watch?v=pb0dTHfIf-k",
-        "picture":"../pics/coron-ds7-ds8.jpg",
-        "description":"Percussion & Drum Synth",
-        "notes":"The DS7 Drum Synce (DC860) is a little analog percussion synthesizer from the 80's made by CORON. This drumsynth was dedicaced to drummers : the DS7 was fixed on the border of a drum to be played/triggered by hitting the drum. The DS7 contain a VCO +VCA chain. The VCO is modulated by a cheesy LFO and a simple decay envelope trigged by the piezzo cell pulse. The cell work as a pressure/hit sensor. It can be replaced by a jack to be used with any kind of trig pulses or even gates. In this case the decay pot become a Release pot.\nThere is lot's of clones available e.g.: - https://github.com/EugeneCarlo/coron-ds8-super-huevo-edition/tree/main - https://github.com/melka/Coron-DS8-Eagle ",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
-        "tags":["Analog","Monophonic","Drum"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Protean",
-        "author":"Kinetik Labs",
-        "link":"https://github.com/pangrus/Protean/tree/master",
-        "demo":"https://www.youtube.com/watch?v=irRmHTh5Q7I",
-        "picture":"../pics/protean.jpg",
-        "description":"ATtiny-based motion texture source",
-        "notes":"Protean incorporates 3 independent sound generators for the production of a wide variety of sonic environments with a ever changing expressive vitality.\nThe sound generators have complementary timbral characteristic covering all the frequency spectrum and may also be modulated by the two low frequency oscillators implemented in the circuit, generating hypnotic sounds which evolve over time. ",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","Monophonic","AVR"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"ArduTouch",
-        "author":"Mitch Altman",
-        "link":"https://github.com/maltman23/ArduTouch/tree/master",
-        "demo":"https://www.youtube.com/watch?v=77Z3uCmT7yM",
-        "picture":"../pics/ardutouch.jpg",
-        "description":"Arduino-compatible music synthesizer",
-        "notes":"ArduTouch is really just an Arduino Uno clone with a small amplifier & speaker, with a PCB touch keyboard, a couple of extra buttons, and a couple of pots (for playing music and controlling the sounds). The ArduTouch Arduino Library is where the real magic comes from!\nAn ArduTouch library is available for programming in more super nice synthesizer features, and for making your own synthesizers. The library comes with examples (with more to come) that serve as a nice tutorial on how to create your own ArduTouch synthesizers (which are Arduino sketches).",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Digital","Monophonic","Arduino","Kit"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Flounder",
-        "author":"Matt Kuebrich",
-        "link":"https://github.com/MattKuebrich/flounder",
-        "demo":"https://www.youtube.com/watch?v=Wfl-h9pgLO8",
-        "picture":"../pics/flounder.jpg",
-        "description":"Teensy based usb midi keyboard + controls + stereo audio",
-        "notes":"Teensy 4 based USB MIDI device with number of FWs. - 12 MIDI mappable potentiometers - full octave touch keyboard - 6 touch function buttons - stereo audio output - runs on Teensy 4.0 / fully reprogrammable - conceived as a friend of norns but works with anything that supports MIDI over USB ",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Teensy","MIDI"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"S54 (Liv's Synth)",
-        "author":"SloBloLabs",
-        "link":"https://github.com/SloBloLabs/LivSynth/tree/main",
-        "demo":"https://www.youtube.com/watch?v=09B7NOryfzA",
-        "picture":"../pics/s54-livs-synth.jpg",
-        "description":"Hybrid mono synth build with full analogue signal path.",
-        "notes":"ESP32 based mono synth with sequencer.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Monophonic","Digital","Analog","ESP32"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Quantum DJ",
-        "author":"Alexander Zolotov",
-        "link":"https://warmplace.ru/hard/qdj/?fbclid=IwAR3kJHlGsxXUGChfXL_qjapHxT5TMV6Du6AfpE0VJ6x5OJzYAFS-qSvjPYk",
-        "demo":"https://www.youtube.com/watch?v=KybklDJELEo",
-        "picture":"../pics/quantum-dj.jpg",
-        "description":"Electromagnetic noise to 1bit sound converter",
-        "notes":"Quantum DJ is an electronic creature that listens to the electromagnetic noise around us, analyzes it and generates some sort of 1-bit sound art depending on its internal state (mood).",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Monophonic","Digital"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Polykit X1",
-        "author":"Polykit",
-        "link":"https://github.com/polykit/polykit-x-monosynth",
-        "demo":"https://www.youtube.com/watch?v=aMLMR25Tyi0",
-        "picture":"../pics/polykit-x1.jpg",
-        "description":"Full analog, semi modular (!), patchable synthesizer. It is an interface that works in conjunction with open source voice card.",
-        "notes":"Voice card specs - Single oscillator with saw, triangle and pulse output - Multiple VCAs to blend between different input signals, a main VCA for the envelope and a panning VCA for stereo output - An additional external input that can be mixed in, eg. a noise signal - One envelope generator for the VCA. It can modulate filter frequency and resonance, also with an inverted signal - A pole-mixing multimode filter with 8 filter responses: - 4P LP - 2P LP - 4P HP - 2P HP - 4P BP - 2P BP - 3P AP + 1P LP - 4P N - There are multiple options two switch and blend between different signals and filter responses - PWM, FM and synchronisation inputs ",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":false},{"Docs":false},{"Enclosure":true}],
-        "tags":["Monophonic","Modular"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Lil' mono",
-        "author":"S Jazura",
-        "link":"https://github.com/diysynth/STANDALONE-DEVICES/tree/main/LIL'-MONO-SYNTH",
-        "demo":"https://www.youtube.com/watch?v=dz-d9Gt5xwY",
-        "picture":"../pics/lil-mono.jpg",
-        "description":"Simple east coast analog synthesizer.",
-        "notes":"It contains a sawtooth wave VCO that tracks V/Oct, a square wave sub-oscillator, a simple and dirty sounding resonant VCF, a VCA and an attack/release envelope generator that can modulate the amplitude and the filter cut-off frequency. The VCO doesn't track very precise but okay-ish pitch tracking with +/-5 cents of tracking error can be expected over a span of 4 to 5 octaves.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":false},{"Enclosure":true}],
-        "tags":["Monophonic","Modular","Analog"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Meebleeps Freaq FM",
-        "author":"Meebleeps",
-        "link":"https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth",
-        "demo":"https://www.youtube.com/watch?v=KD6IrcmMkoA",
-        "picture":"../pics/meebleeps-freaq-fm.jpg",
-        "description":"Dual-Voice 2 operator 8-bit FM Arduino Synth with 2-track generative sequencer, Mozzi library, Volca form-factor.",
-        "notes":"Voices - 2 independent FM voices - 2-operator FM (for old-school prince of persia vibes! 😂) - Multi-mode FM ratios - quantised, free-multiple, independent - Multiple operator waveforms for carrier & modulator - Sine, Saw, Reverse Saw, Square, Noise, Off - Modulation level controlled by Attack/Decay envelope and LFO per-voice - Multiple LFO waveforms (same tables as the carrier oscillators) Sine, Saw, Reverse Saw, Square, Noise Sequencer - 2/1.5 track polymetric sequencer with up to 16 steps per track (Both tracks use same note sequence but can have different step-counts for polymetric phasing) - Multiple generative algorithms - (semi)random notes, (semi)random runs, arpeggio, drone - Sequence mutates/evolves at user-defined rate & note-density - Selectable tonic, octave & scale quantisation (Major, Minor, Pentatonic, Phrygian (GOA!), Octaves, Fifths) - Tap-tempo control - Sync input & output (Korg Volca compatible) - 16-step parameter-lock recording of synth parameters for track 1 (the Elektron way!) ",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Arduino","Digital","Monophonic","Sequencer"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Meebleeps Mutant",
-        "author":"Meebleeps",
-        "link":"https://github.com/Meebleeps/MeeBleeps-Mutant-Synth",
-        "demo":"https://www.youtube.com/watch?v=d2Lml1Z9uWc",
-        "picture":"../pics/meebleeps-mutant.jpg",
-        "description":"8-Bit 2-oscillator subtractive Arduino synth for generative techno, using Mozzi library, in Volca form-factor.",
-        "notes":"Synth Voice Features - 2 saw oscillators - Multiple tuning modes for 2nd oscillator - off, detune, fifths & octaves up/down - Digital low pass filter with variable cutoff and resonance - Variable level ducking/sidechain effect Sequencer - Generative sequencer mutates/evolves at user-defined rate - Variable sequence mutation probability & note-density - Variable sequencer length (1-16 steps) - Sync input & output (Korg Volca compatible) - Selectable tonic note - Selectable scale quantisation (Major, Minor, Pentatonic, Phrygian (GOA!), Octaves, Fifths) - 16-step parameter-lock recording of synth parameters (the Elektron way!) - Retrig (clone) button for fills - Tap-tempo control\nMore details in Reddit post .",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Arduino","Digital","Monophonic","Sequencer"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Teensy Audio FX",
-        "author":"Matt Venn",
-        "link":"https://github.com/mattvenn/teensy-audio-fx",
-        "demo":"https://www.youtube.com/watch?v=zHr6EKKnGfY",
-        "picture":"../pics/teensy-audio-fx.jpg",
-        "description":"Playable effects modeled on the Teenage Engineering PO series",
-        "notes":"'- A Teensy 4 based FX unit with Pocket Operator style and playability. - 12 knobs, 4 buttons each with LED, and 4 LEDs showing automation cycle. - Combination of filtered reverb, ping pong filtered delay and a noise source, but this is customisable. - Each knob can be automated (a bit like punch in effects on the Pocket Operators) - Tap tempo and PO sync",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Teensy","Fx"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"OpenDeck",
-        "author":"ShanteaControls",
-        "link":"https://github.com/shanteacontrols/OpenDeck",
-        "demo":"https://www.youtube.com/watch?v=ydmWxC_y35U",
-        "picture":"../pics/opendeck.jpg",
-        "description":"Open platform for ultimate MIDI control deck building",
-        "notes":"OpenDeck is a platform for building MIDI controllers. It is a firmware running on various boards which transforms them into class-compliant USB MIDI devices, making them compatible with any MIDI software on any operating system. There is plenty of 3rd party HW designs in their repo.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["MIDI","Kit"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Faderbank 16n",
-        "author":"Brian Crabtree",
-        "link":"https://github.com/16n-faderbank/16n",
-        "demo":"https://www.youtube.com/watch?v=edriUxDgTsg",
-        "picture":"../pics/faderbank-16n.jpg",
-        "description":"16 faders MIDI-controller which is compatible with modular world",
-        "notes":"This is 16n. It is a bank of 16 60mm faders. It is designed for controlling electronic musical instruments and devices. Everything you need to make one is at its Github repository.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
-        "tags":["MIDI","Modular","Teensy"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"BE2N",
-        "author":"JolinLab",
-        "link":"https://www.jolinlab.com/be2n/",
-        "demo":"https://www.youtube.com/watch?v=IiPVO7SEGBI",
-        "picture":"../pics/be2n.jpg",
-        "description":"BE2N is a 22HP eurorack module with two specular Benjolins at its core.",
-        "notes":"The Benjolin designed by Rob Hordijk in 2009, was a a kit to be built in educational workshops to promote synth DIY. The idea is that people can build a medium complexity electronic circuit in a controlled environment and box it later at home.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Modular","Digital"],
-        "level":"Advanced"
-    },
-
-    {
+        "permalink":"/synths/attiny-punk-console",
         "name":"ATtiny Punk Console",
         "author":"Noisio",
         "link":"https://github.com/noisio/ATtiny-Punk-Console",
@@ -247,383 +15,7 @@
     },
 
     {
-        "name":"Nano minipops",
-        "author":"Jan Ostman",
-        "link":"https://github.com/NANOmodules/NANO-Minipops",
-        "demo":"https://www.youtube.com/watch?v=RJu-DWOXwls",
-        "picture":"../pics/nano-minipops.jpg",
-        "description":"Korg minipops made around Arduino.",
-        "notes":"The hardware consists in an Arduino Uno including it shield with 9 slide switches, 2 rotary potentiometers and 1 LED. Software in the CODE folder contains all the necessary to convert your Arduino Uno in a Minipops drum box.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","Arduino","Monophonic"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Fasma Festival",
-        "author":"Tomash GHZ",
-        "link":"https://tomashg.com/?p=1324",
-        "demo":"https://www.youtube.com/watch?v=E9JRIe1dBe0",
-        "picture":"../pics/fasma-festival.jpg",
-        "description":"Yet another Teensy drum machine with clock sync.",
-        "notes":"'- 4 voices (Kick, Tom, Snare and Hat) 2 Digital Oscillator modules, 2 PCM sample playback. - 4 parameter controls per each voice. Pitch, Decay, Pitch Modulation and Distortion. - 16 step tap patterns. - Automation record per each step and randomizing automation. - 4 patters, can be permanently stored on the device together with the Automation data. - Up to 8 patterns sequence chain. - Clock In and Output. Can be master or slave device. - Line out and a headphone output with volume control. - Muting voices, possibility to erase individual voices or whole patterns. - Metronome.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","Drum","Teensy"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"x0x heart",
-        "author":"Open Music Labs",
-        "link":"http://www.openmusiclabs.com/projects/x0x-heart/",
-        "demo":"https://www.youtube.com/watch?v=QQPS4Y4jzk4",
-        "picture":"../pics/x0x-heart.jpg",
-        "description":"Heart of the infamous TB-303, surgically extracted to be transplanted into your designs.",
-        "notes":"The x0x-heart is just the analog section of the TB-303, replicated with SMT components, and made small enough to fit into a Eurorack modular format. It even has a Eurorack power header on it. More in OML wiki",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Analog","Modular"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"NTH synth",
-        "author":"ohn Staskevich and Kevin Holland",
-        "link":"https://github.com/NTHSynth/NTH_DSP",
-        "demo":"https://www.youtube.com/watch?v=BX9g7MI1weA",
-        "picture":"../pics/nth-synth.jpg",
-        "description":"8-bit hackable mono synth.",
-        "notes":"The NTH is designed so that a complete beginner can quickly craft incredibly varied timbres. For the synth veteran, the NTH offers relief from layered menus and obscured functions. The NTH puts a smile on the face of musicians and non-musicians, synth geeks and synth novices, children and adults alike.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Digital","PIC","MIDI"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Kelpie",
-        "author":"Kenneth Marut",
-        "link":"https://github.com/friedpies/kelpie-pocket-synth",
-        "demo":"https://www.youtube.com/watch?v=N3tbNFI8Xls",
-        "picture":"../pics/kelpie.jpg",
-        "description":"Portable polyphonic digital synthesizer.",
-        "notes":"The device consists of 16 knobs and 4 LED buttons, a standard MIDI input, 1/4 mono output, 1/8 stereo output, and a micro-USB input (for programming). The goal of this project was to create a budget digital synthesizer for all experience levels that could be easily interfaced with a MIDI keyboard and used in live performances. This is a no-frills synthesizer, with no presets, arpeggiator, or storage. ",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Teensy","Polyphonic","MIDI"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"MIDIvampire II",
-        "author":"Open Music Labs",
-        "link":"http://www.openmusiclabs.com/projects/midivamp2/index.html",
-        "demo":"https://www.youtube.com/watch?v=oQt7cyDuBHY",
-        "picture":"../pics/midivampire-ii.jpg",
-        "description":"4 voice drum machine that is powered from the MIDI data line.",
-        "notes":"It has 2 wavetable voices for making kick drums, toms, wood blocks, bells, and a host of other sounds. There is a voice set aside for hi-hats and cymbals, and another which is a filtered noise source, which can make snares and hollow-tube sounds. Each voice has separate attack, decay, and release, along with frequency sweep, and a bunch of other effects for warping the sounds to fit all your percussive needs. And, there are independent outputs for each voice.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Drum","AVR","Kit","MIDI"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Drone & Drama",
-        "author":"Barry Joseph Cullen",
-        "link":"https://github.com/bjc01/D-D_Teensy",
-        "demo":"https://www.youtube.com/watch?v=_x35PZHW8Zg",
-        "picture":"../pics/drone--drama.jpg",
-        "description":"Simple drone synth based on Teensy.",
-        "notes":"More info in Barry's blog post",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","Teensy"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Le Strum",
-        "author":"six4pix",
-        "link":"https://github.com/hotchk155/Voici-Le-Strum",
-        "demo":"https://www.youtube.com/watch?v=3jQ4zBmrjXg",
-        "picture":"../pics/le-strum.jpg",
-        "description":"Compact and very simple yet funny MIDI strummer.",
-        "notes":"Connect LE STRUM to your MIDI synthesizer or computer running synth software, hold down a combination of buttons to select a chord, then use the “stylus” to play MIDI notes by touching the contact pads on the top right of the board. As the name suggests, you can “strum” across chords using the stylus, providing an unique and expressive MIDI controller.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Digital","PIC","MIDI"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Mixtape Alpha",
-        "author":"Open Music Labs",
-        "link":"http://wiki.openmusiclabs.com/wiki/MixtapeAlpha",
-        "demo":"https://www.youtube.com/watch?v=TBudhbE61U4",
-        "picture":"../pics/mixtape-alpha.jpg",
-        "description":"Credit-card sized Atmega328-based 4 voice synth.",
-        "notes":"It has a stylophone style input for continuous note generation, and 6 buttons for discrete notes. With 4 voices, 4 effects, and 5 note polyphony there is quite a range of expression. But, the best part is, you can record the songs you make, and trade mixtapes with your friends! Perhaps even better, it’s based on the ATmega328p, and can be hacked to make even crazier sounds than we came up with. More info at OML page",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Digital","AVR","Kit"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Arpie",
-        "author":"six4pix",
-        "link":"https://six4pix.com/product/arpie/",
-        "demo":"https://www.youtube.com/watch?v=1Q_KULZHBpg",
-        "picture":"../pics/arpie.jpg",
-        "description":"Compact, highly-functional, MIDI arpeggiator.",
-        "notes":"ARPIE does not make any sound by itself, but rather outputs MIDI note information which can play a synth, sampler, software synth or other compatible sound module.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Digital","AVR","Kit","MIDI"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Real SID shield",
-        "author":"A.T.Brask",
-        "link":"https://github.com/emceha/RealSIDShield",
-        "demo":"https://www.youtube.com/watch?v=aWzvNC8BdNY",
-        "picture":"../pics/real-sid-shield.jpg",
-        "description":"Digital interface to SID chip (Commodore 64).",
-        "notes":"An Arduino shield that makes it easy to use a MOS Technology 6581/8580 SID chip (the famous C64 sound chip)",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","Arduino","Chiptune"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"ZeKit",
-        "author":"Fred's Lab",
-        "link":"https://github.com/Marzac/zekit",
-        "demo":"https://www.youtube.com/watch?v=wc9zw-9Cn2Q",
-        "picture":"../pics/zekit.jpg",
-        "description":"4 voice paraphonic synth.",
-        "notes":"4 voice paraphonic microsynth, featuring a simple step sequencer, various digital waveforms, an analog VCF, VCA and two AR analog envelopes.\nThe instrument can be controlled using MIDI (notes & clock) and has both a sync and audio inputs. External audio sources can be mixed in or be processed through the VCF / VCA.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","AVR","Kit","MIDI"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Polaron",
-        "author":"Zueblin",
-        "link":"https://github.com/zueblin/Polaron",
-        "demo":"https://www.youtube.com/watch?v=JC_pZTxMb0c",
-        "picture":"../pics/polaron.jpg",
-        "description":"Digital drum machine based on the Teensy 3.6.",
-        "notes":"Main features: - 16 step sequencer - 6 instrument tracks - 16 patterns per track - load/save projects to SD card - 2 pots for parameter control - parameter locks: all instrument parameters can be recorded for each step - different pattern length for each instrument track - sync to midi-clock (usb-midi) or trigger input - crunchy 12bit stereo outputs ",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Drum","Digital","Teensy","MIDI"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Lunchbeat",
-        "author":"Buranelectrix",
-        "link":"https://github.com/buranelectrix/lunchbeat-PCB",
-        "demo":"https://www.youtube.com/watch?v=9ZvAgihcfdg",
-        "picture":"../pics/lunchbeat.jpg",
-        "description":"1-bit percussion sounds and a sequencer.",
-        "notes":"The grittiest drum machine ever. ",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Drum","Digital"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"DrumKid",
-        "author":"Matty Brad",
-        "link":"https://github.com/mattybrad/drumkid",
-        "demo":"https://www.youtube.com/watch?v=lZRSMGQkm_U",
-        "picture":"../pics/drumkid.jpg",
-        "description":"Lo-fi aleatoric Arduino drum machine.",
-        "notes":"A drum machine which generates rhythms using probability. Imagine a traditional step-based drum machine, but where various dice are rolled for each step, with the resulting numbers used to determine the behaviour of the beat.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Drum","Digital","Arduino","MIDI"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Yowler",
-        "author":"Cat full of ghosts",
-        "link":"https://github.com/cfoge/the_Yowler",
-        "demo":"https://www.youtube.com/watch?v=O0ltJwYQ1AM",
-        "picture":"../pics/yowler.jpg",
-        "description":"Versatile small form noise/drone synth.",
-        "notes":"Kickstarter funded project now opened. - External trigger + Diode VCA: trigger the Yowler from external gear, use it as a drum synth, built in trigger button and latch + trigger in acts as a simple vca! 4 - Oscillators and 2 XOR mixers: lots of grinding, driving sounds, osc 3 and 4 can be turned off and on. - Built in speaker + mono/stereo output: means you can use it with mono gear like guitar pedals or a modular synth, or stereo gear like mixers, headphones etc... - Pitch knobs + light dependent pitch control: get crazy sounds from the three oscillators by shining light on them.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":true}],
-        "tags":["Analog"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"x0xb0x",
-        "author":"Adafruit",
-        "link":"https://www.ladyada.net/make/x0xb0x/index.html",
-        "demo":"https://www.youtube.com/watch?v=paWAYuZ5I2w",
-        "picture":"../pics/x0xb0x.jpg",
-        "description":"Full reproduction of the original Roland TB-303 synthesizer, with fully functional sequencer. ",
-        "notes":"The sequencer can be programmed just like the original 303 (ok its actually a little easier, we think) and can be used to control other synthesizers via any of its various output formats. 128 banks of track memory and 64 banks of pattern memory are stored in onboard EEPROM, no battery-backup is needed!",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Drum","Sequencer","Digital","Kit","MIDI"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Teensy Beats Shield",
-        "author":"Chris Miller",
-        "link":"https://hackaday.io/project/161127-teensy-beats-shield",
-        "demo":"https://www.youtube.com/watch?v=HSS_-nJva-s",
-        "picture":"../pics/teensy-beats-shield.jpg",
-        "description":"Handheld audio sequencer. PO style.",
-        "notes":"This project aims to fill a void in open source handheld musical instruments. Being open source and built on a highly capable and extensible platform, hackers are free to modify, create, and remix this design for the common good. I'm very open to suggestions, patches, etc.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Teensy","Sequencer","Digital"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Lil CMOS toolbox",
-        "author":"Planeteatrr",
-        "link":"https://github.com/diysynth/STANDALONE-DEVICES",
-        "demo":"https://www.youtube.com/watch?v=F06fM2n9Yoc",
-        "picture":"../pics/lil-cmos-toolbox.jpg",
-        "description":"CMOS-based semi-modular synthesizer.",
-        "notes":"The idea started as an expander for the Behringer Neutron. I always felt that the Neutron is lacking some kind of modulation for the oscillator section. So the Toolbox provides a ring-modulator (quite similar to the one in the Korg MS-20) and a sub-oscillator, to fulfill my needs. Here is a list of the features: - Ring-modulator - Sub-oscillator (-1/-2 Octave) - Clock divider - 2 oscillators (square) - Comparator - Buffer",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":false},{"Enclosure":true}],
-        "tags":["Analog","Modular"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"WTPA2 (Where is the party at 2)",
-        "author":"Todd Bailey",
-        "link":"http://blog.narrat1ve.com/wtpa2/",
-        "demo":"https://www.youtube.com/watch?v=pAaV_6Hzd2I",
-        "picture":"../pics/wtpa2-where-is-the-party-at-2.jpg",
-        "description":"8-bit audio sampler kit which does some stuff that no other samplers out there do.",
-        "notes":"WTPA is designed to the following aesthetic ends: to be a good and clear example of fairly “traditional” analog (low noise, relatively low frequency, high headroom, good routing, sensible ADCs and DACs etc) and digital (clean low level code, parallel memory architecture, I/O expansion via latches, various serial communication protocols) circuit design, and is catered to the determined (though not necessarily experienced) kit-builder who really, truly wants to learn more about how electronics work and how to get better at their craft.\n[Github repo](https://github.com/ToddBailey/WTPA2)",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Digital","Sampler","Analog","MIDI"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Wee Noise Maker",
-        "author":"Fabien Chouteau",
-        "link":"https://hackaday.io/project/19326-wee-noise-maker",
-        "demo":"https://www.youtube.com/watch?v=fAjKelBxt00",
-        "picture":"../pics/wee-noise-maker.jpg",
-        "description":"Pocket size sampler/sequencer with audio DAC, headphone amplifier and audio input.",
-        "notes":"Wee Noise Maker is a pocket size music synthesizer based on the STM32F427 ARM Cortex-M4F micro-controller. It features an audio DAC with headphone amplifier, audio input, 96x16 OLED screen, 2 rotary encoders, 24 tactile switches and LEDs, micro SD card slot, LiPo battery charger and an I2C extension port. Hardware repo",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","Sequencer"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"POLY555",
-        "author":"Oskitone",
-        "link":"https://github.com/oskitone/poly555",
-        "demo":"https://www.youtube.com/watch?v=YcFjmL8s72Y",
-        "picture":"../pics/poly555.jpg",
-        "description":"Polyphonic, analog, square wave synth based on the 555 timer chip.",
-        "notes":"- 20 keys control 20 555 timers under a plexiglass window - Custom PCB and 3D-printed hardware, all designed by yours truly - Satisfying clicky tactile switches - Built-in amplifier and speaker - Soldered, assembled, tuned, and ready to go! ",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":false},{"Docs":true},{"Enclosure":true}],
-        "tags":["Analog","Polyphonic","Kit"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Noise Toaster",
-        "author":"Ray Wilson",
-        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
-        "demo":"https://www.youtube.com/watch?v=smFKx6gfOd0",
-        "picture":"../pics/noise-toaster.jpg",
-        "description":"Simple, full analog noise synth.",
-        "notes":"The MFOS Noise Toaster circuit consists of seven main components: a voltage controlled oscillator (VCO), a white noise generator, a voltage controlled low pass filter (VCF), a low frequency oscillator (LFO), a simple AR envelope generator (AREG), a simple voltage controlled amplifier (VCA), and a one watt amplifier that drives a small speaker. The unit is powered by one nine volt battery and due to the low current drain of the LM324 (Lo-Power Quad Op Amp) it gets a lot of miles out of a nine volt battery.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
-        "tags":["Analog","Monophonic"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Sound Lab Mini-Synth MkII",
-        "author":"Ray Wilson",
-        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
-        "demo":"https://www.youtube.com/watch?v=-ijNzWQH0dk",
-        "picture":"../pics/sound-lab-mini-synth-mkii.jpg",
-        "description":"Full analog Ray Wilson's synth. Descendant of Sound Lab Mini-Synth.",
-        "notes":"'- Two Musically Accurate VCOs With 1V/Octave Tracking - White Noise Generator - Audio Mixer With External Input - State Variable VCF Low-Pass & Band Pass Response - VCF Doubles As 1V/Oct Tracking Sine Wave Oscillator - VCF Has Multiple Modulation Options - VCA Has Multiple Modulation Options - LFO (Ramp, Saw, Tri and Square) - Two AD/AR Generators - Keyboard Control Inputs - VCOs and VCF Normalized To Keyboard CV Input - AD/AR Generators Normalized To Keyboard Gate Input - Patchable Sample And Hold - Two Repeat Gate Generators for AD/AR Generators - AD/AR Generators Normalized For S&H Triggering ",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
-        "tags":["Analog","Monophonic"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"Echo Rockit",
-        "author":"Ray Wilson",
-        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
-        "demo":"https://www.youtube.com/watch?v=BBRA-ZliXaA",
-        "picture":"../pics/echo-rockit.jpg",
-        "description":"Small, portable synth / effect processor.",
-        "notes":"The device is somehow similar to Korg Monotron Delay, but it has more modulation options.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
-        "tags":["Analog","Monophonic"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Sound Lab Mini-Synth",
-        "author":"Ray Wilson",
-        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
-        "demo":"https://www.youtube.com/watch?v=fOlqHWykypg",
-        "picture":"../pics/sound-lab-mini-synth.jpg",
-        "description":"Full analog legendary design by Ray Wilson.",
-        "notes":"This project is fun for someone with intermediate to advanced electronics skills who wants to make cool sounds. It makes a great first synth project but is interesting enough for the seasoned synth-diyer too. The board includes 1V/oct scale adjustment trimmers for the oscillators You will get a couple (maybe three) octaves of in tune scale.",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
-        "tags":["Analog","Monophonic"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"YM2149 Synth",
-        "author":"Timothy Lamb",
-        "link":"https://github.com/trash80/Ym2149Synth",
-        "demo":"https://www.youtube.com/watch?v=0PLkJXF9rZ8",
-        "picture":"../pics/ym2149-synth.jpg",
-        "description":"Neat little chip that was used in various retro arcade machines and consoles, including the Atari ST.",
-        "notes":"Controllable with MIDI or Max patch. ",
-        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Digital","Chiptune","Teensy","Polyphonic","MIDI"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Mega MIDI",
-        "author":"Aidan Lawrence",
-        "link":"https://github.com/AidanHockey5/MegaMIDI",
-        "demo":"https://www.youtube.com/watch?v=GjcnrMy_QiQ",
-        "picture":"../pics/mega-midi.jpg",
-        "description":"MIDI-compatible Sega Genesis/Megadrive Synthesizer with REAL sound chips.",
-        "notes":"The Mega MIDI is not an emulator. This is the real deal. Both the genuine YM2612 and the SN76489 PSG sound chips are on-board. Further still, the patches are not recreated “sound-alikes” either. They are one-for-one instruments with identical settings to those found within their parent games. You are playing the actual patches on authentic hardware.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["AVR","Polyphonic","Digital","Chiptune","Kit","MIDI"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Anushri",
-        "author":"Mutable Instruments",
-        "link":"https://mutable-instruments.net/archive/",
-        "demo":"https://www.youtube.com/watch?v=zZLmu_DnRBs",
-        "picture":"../pics/anushri.jpg",
-        "description":"DIY digitally controlled analog monosynth.",
-        "notes":"Anushri is a monophonic synthesizer with an all-analog signal path, paired with a lo-fi digital drum synthesizer. These two sections are controlled by an on-board sequencer/arpeggiator, featuring generative drum pattern sequencing. Anushri is open to the modular world thanks to its analog patching area.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["AVR","Monophonic","Digital","Modular","MIDI"],
-        "level":"Intermediate"
-    },
-
-    {
+        "permalink":"/synths/ambika",
         "name":"Ambika",
         "author":"Mutable Instruments",
         "link":"https://mutable-instruments.net/archive/",
@@ -637,123 +29,287 @@
     },
 
     {
-        "name":"Zynthian",
-        "author":"Zynthian community",
-        "link":"https://zynthian.org/",
-        "demo":"https://www.youtube.com/watch?v=Aq9Bavd7OqY",
-        "picture":"../pics/zynthian.jpg",
-        "description":"Open Platform for Sound Synthesis & Processing build on top of Raspberry Pi.",
-        "notes":"It is possible to made it out of aftermarket parts. But if you want to use controls, MIDI, etc, you need to make (or buy in kit) custom PCBs. - Repos collection - Hardware repo - Wiki - Assembly docs",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Polyphonic","Raspberry","Digital","Kit","MIDI"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Totoro",
-        "author":"SyntherJack",
-        "link":"https://github.com/Atarity/totoro-synth",
-        "demo":"https://www.youtube.com/watch?v=yHeWAp9w_LM",
-        "picture":"../pics/totoro.jpg",
-        "description":"Cheap and easy to solder 2 oscillators synth.",
-        "notes":"Totoro is a portable, analog synth made on top of MCP6004 opamp. It features 2 VCOs (one could act as LFO) and simple VCF.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":true}],
-        "tags":["Monophonic","Analog"],
-        "level":"Newbe"
-    },
-
-    {
-        "name":"Portable synth",
-        "author":"Prajwal Tumkur Mahesh",
-        "link":"https://github.com/prajwal1121/Portable-Synth",
-        "demo":"https://www.youtube.com/watch?v=yj9AeDa9qw8",
-        "picture":"../pics/portable-synth.jpg",
-        "description":"OP-1 style portable groovebox based around Teensy 4.",
-        "notes":"Work in progress, but 2nd version of hardware already published. ",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Digital","Polyphonic","Teensy"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"OTTO",
-        "author":"Bitfield Audio",
-        "link":"https://github.com/bitfieldaudio/OTTO",
-        "demo":"https://www.youtube.com/watch?v=nBDd2tuIafM",
-        "picture":"../pics/otto.jpg",
-        "description":"Digital hardware groovebox, with synths, samplers, effects and a sequencer with an audio looper.",
-        "notes":"The interface is flat, modular and easy to use, but most of all, it aims to encourage experimentation. The workflow is intended to be minimalistic with a minimum of menu-diving and everything at most a couple of intuitive button presses away.\nThe OTTO is open source (except for commercial use), and we value our community highly! \nHardware repo",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Polyphonic","Digital"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"PreenFM 2",
-        "author":"Xavier Hosxe",
-        "link":"https://github.com/Ixox/preenfm2",
-        "demo":"https://www.youtube.com/watch?v=QXQLlKPX7CQ",
-        "picture":"../pics/preenfm-2.jpg",
-        "description":"Preenfm brings the old FM synthesis in small open-source modern DIY boxes.",
-        "notes":"There is 4 independent instruments. Each of them has: - Powerful arpeggiator (Mutable-Instruments opensource algorithm). - 1 effect Slot (LP, HP, Bass boost, Band Pass, crusher) - 1 gate effect - 4 rapid access performance parameters - The 4 instruments can be saved all at the same time in combo presets. - Each instrument has its own modifiable midi channel. They can share the same for FAT quadruple timbres notes. - Modifiable number of allocated voices… Between 1 and 14. - 28 FM algorithms from 3 to 6 operators\nDocumentation NB: New PreenFM 3 is not open-source anymore. Please do not submit this design.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":true}],
-        "tags":["Digital","Polyphonic","Kit","MIDI"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Shruthi-1",
+        "permalink":"/synths/anushri",
+        "name":"Anushri",
         "author":"Mutable Instruments",
-        "link":"https://mutable-instruments.net/archive/shruthi/build/",
-        "demo":"https://www.youtube.com/watch?v=PVcmQ_h4bx8",
-        "picture":"../pics/shruthi-1.jpg",
-        "description":"Hybrid synthesizer with digital generators and swappable analog filter boards.",
-        "notes":"The Shruthi contains two section: a digital section (“control board” or “digital board”), containing the display, main microcontroller, switches and pots ; and an analog section (“filter board”) hosting the VCF, VCA, input mixer and the output stage. Several variants of the filter board are available to provide a broad range of sounds.\nThere is also Shruti XT option with additional physical controls.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
-        "tags":["Digital","Analog","AVR","Monophonic","MIDI"],
-        "level":"Advanced"
-    },
-
-    {
-        "name":"NSynth Super",
-        "author":"Magenta (Google)",
-        "link":"https://github.com/googlecreativelab/open-nsynth-super",
-        "demo":"https://www.youtube.com/watch?v=oJtnn1Gqx9I",
-        "picture":"../pics/nsynth-super.jpg",
-        "description":"An experimental physical interface for the NSynth algorithm. ",
-        "notes":"NSynth (Neural Synthesizer) it’s a machine learning algorithm that uses a deep neural network to learn the characteristics of sounds, and then create a completely new sound based on these characteristics.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
-        "tags":["Raspberry","Digital","MIDI"],
+        "link":"https://mutable-instruments.net/archive/",
+        "demo":"https://www.youtube.com/watch?v=zZLmu_DnRBs",
+        "picture":"../pics/anushri.jpg",
+        "description":"DIY digitally controlled analog monosynth.",
+        "notes":"Anushri is a monophonic synthesizer with an all-analog signal path, paired with a lo-fi digital drum synthesizer. These two sections are controlled by an on-board sequencer/arpeggiator, featuring generative drum pattern sequencing. Anushri is open to the modular world thanks to its analog patching area.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["AVR","Monophonic","Digital","Modular","MIDI"],
         "level":"Intermediate"
     },
 
     {
-        "name":"Meeblip Triode",
-        "author":"Meeblip",
-        "link":"https://github.com/MeeBlip/meeblip-triode",
-        "demo":"https://www.youtube.com/watch?v=aJCYosgxnHo",
-        "picture":"../pics/meeblip-triode.jpg",
-        "description":"Hackable monophonic synth based on atmega32. It consists of 2 PCBs stacked together.",
-        "notes":"MeeBlip triode's huge sound is driven by three oscillators and a unique twin-t analog lowpass filter. Two digital pulse / pwm / sawtooth oscillators can be detuned and a square wave sub-oscillator adds to the bottom end. For sonic variety, triode also offers hands-on access to 24 grungy wavetables, along with dual envelopes routed to oscillator amplitude and filter cutoff for powerful filter sweeps and effects.",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
-        "tags":["Monophonic","AVR","Digital","MIDI"],
-        "level":"Intermediate"
-    },
-
-    {
-        "name":"Meeblip SE",
-        "author":"Meeblip",
-        "link":"https://github.com/MeeBlip/meeblip-circuits",
-        "demo":"https://www.youtube.com/watch?v=YFKGGdwSR2o",
-        "picture":"../pics/meeblip-se.jpg",
-        "description":"Hackable monophonic synth based on atmega32.",
-        "notes":"Very same synth as Meeblip Micro, but with knobs and switches. Here it is MIDI mapping",
-        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":true},{"Enclosure":false}],
-        "tags":["Monophonic","Digital","AVR","MIDI"],
+        "permalink":"/synths/ardutouch",
+        "name":"ArduTouch",
+        "author":"Mitch Altman",
+        "link":"https://github.com/maltman23/ArduTouch/tree/master",
+        "demo":"https://www.youtube.com/watch?v=77Z3uCmT7yM",
+        "picture":"../pics/ardutouch.jpg",
+        "description":"Arduino-compatible music synthesizer",
+        "notes":"ArduTouch is really just an Arduino Uno clone with a small amplifier & speaker, with a PCB touch keyboard, a couple of extra buttons, and a couple of pots (for playing music and controlling the sounds). The ArduTouch Arduino Library is where the real magic comes from!\nAn ArduTouch library is available for programming in more super nice synthesizer features, and for making your own synthesizers. The library comes with examples (with more to come) that serve as a nice tutorial on how to create your own ArduTouch synthesizers (which are Arduino sketches).",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Digital","Monophonic","Arduino","Kit"],
         "level":"Newbe"
     },
 
     {
+        "permalink":"/synths/arpie",
+        "name":"Arpie",
+        "author":"six4pix",
+        "link":"https://six4pix.com/product/arpie/",
+        "demo":"https://www.youtube.com/watch?v=1Q_KULZHBpg",
+        "picture":"../pics/arpie.jpg",
+        "description":"Compact, highly-functional, MIDI arpeggiator.",
+        "notes":"ARPIE does not make any sound by itself, but rather outputs MIDI note information which can play a synth, sampler, software synth or other compatible sound module.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Digital","AVR","Kit","MIDI"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/be2n",
+        "name":"BE2N",
+        "author":"JolinLab",
+        "link":"https://www.jolinlab.com/be2n/",
+        "demo":"https://www.youtube.com/watch?v=IiPVO7SEGBI",
+        "picture":"../pics/be2n.jpg",
+        "description":"BE2N is a 22HP eurorack module with two specular Benjolins at its core.",
+        "notes":"The Benjolin designed by Rob Hordijk in 2009, was a a kit to be built in educational workshops to promote synth DIY. The idea is that people can build a medium complexity electronic circuit in a controlled environment and box it later at home.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Modular","Digital"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/coron-ds7-ds8",
+        "name":"Coron DS7 (DS8)",
+        "author":"Paparail Synth Labs",
+        "link":"http://m.bareille.free.fr/ds7clone/ds8.htm",
+        "demo":"https://www.youtube.com/watch?v=pb0dTHfIf-k",
+        "picture":"../pics/coron-ds7-ds8.jpg",
+        "description":"Percussion & Drum Synth",
+        "notes":"The DS7 Drum Synce (DC860) is a little analog percussion synthesizer from the 80's made by CORON. This drumsynth was dedicaced to drummers : the DS7 was fixed on the border of a drum to be played/triggered by hitting the drum. The DS7 contain a VCO +VCA chain. The VCO is modulated by a cheesy LFO and a simple decay envelope trigged by the piezzo cell pulse. The cell work as a pressure/hit sensor. It can be replaced by a jack to be used with any kind of trig pulses or even gates. In this case the decay pot become a Release pot.\nThere is lot's of clones available e.g.: - https://github.com/EugeneCarlo/coron-ds8-super-huevo-edition/tree/main - https://github.com/melka/Coron-DS8-Eagle ",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
+        "tags":["Analog","Monophonic","Drum"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/drone-drama",
+        "name":"Drone & Drama",
+        "author":"Barry Joseph Cullen",
+        "link":"https://github.com/bjc01/D-D_Teensy",
+        "demo":"https://www.youtube.com/watch?v=_x35PZHW8Zg",
+        "picture":"../pics/drone--drama.jpg",
+        "description":"Simple drone synth based on Teensy.",
+        "notes":"More info in Barry's blog post",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","Teensy"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/drumkid",
+        "name":"DrumKid",
+        "author":"Matty Brad",
+        "link":"https://github.com/mattybrad/drumkid",
+        "demo":"https://www.youtube.com/watch?v=lZRSMGQkm_U",
+        "picture":"../pics/drumkid.jpg",
+        "description":"Lo-fi aleatoric Arduino drum machine.",
+        "notes":"A drum machine which generates rhythms using probability. Imagine a traditional step-based drum machine, but where various dice are rolled for each step, with the resulting numbers used to determine the behaviour of the beat.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Drum","Digital","Arduino","MIDI"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/echo-rockit",
+        "name":"Echo Rockit",
+        "author":"Ray Wilson",
+        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
+        "demo":"https://www.youtube.com/watch?v=BBRA-ZliXaA",
+        "picture":"../pics/echo-rockit.jpg",
+        "description":"Small, portable synth / effect processor.",
+        "notes":"The device is somehow similar to Korg Monotron Delay, but it has more modulation options.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
+        "tags":["Analog","Monophonic"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/faderbank-16n",
+        "name":"Faderbank 16n",
+        "author":"Brian Crabtree",
+        "link":"https://github.com/16n-faderbank/16n",
+        "demo":"https://www.youtube.com/watch?v=edriUxDgTsg",
+        "picture":"../pics/faderbank-16n.jpg",
+        "description":"16 faders MIDI-controller which is compatible with modular world",
+        "notes":"This is 16n. It is a bank of 16 60mm faders. It is designed for controlling electronic musical instruments and devices. Everything you need to make one is at its Github repository.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
+        "tags":["MIDI","Modular","Teensy"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/fasma-festival",
+        "name":"Fasma Festival",
+        "author":"Tomash GHZ",
+        "link":"https://tomashg.com/?p=1324",
+        "demo":"https://www.youtube.com/watch?v=E9JRIe1dBe0",
+        "picture":"../pics/fasma-festival.jpg",
+        "description":"Yet another Teensy drum machine with clock sync.",
+        "notes":"'- 4 voices (Kick, Tom, Snare and Hat) 2 Digital Oscillator modules, 2 PCM sample playback. - 4 parameter controls per each voice. Pitch, Decay, Pitch Modulation and Distortion. - 16 step tap patterns. - Automation record per each step and randomizing automation. - 4 patters, can be permanently stored on the device together with the Automation data. - Up to 8 patterns sequence chain. - Clock In and Output. Can be master or slave device. - Line out and a headphone output with volume control. - Muting voices, possibility to erase individual voices or whole patterns. - Metronome.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","Drum","Teensy"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/flounder",
+        "name":"Flounder",
+        "author":"Matt Kuebrich",
+        "link":"https://github.com/MattKuebrich/flounder",
+        "demo":"https://www.youtube.com/watch?v=Wfl-h9pgLO8",
+        "picture":"../pics/flounder.jpg",
+        "description":"Teensy based usb midi keyboard + controls + stereo audio",
+        "notes":"Teensy 4 based USB MIDI device with number of FWs. - 12 MIDI mappable potentiometers - full octave touch keyboard - 6 touch function buttons - stereo audio output - runs on Teensy 4.0 / fully reprogrammable - conceived as a friend of norns but works with anything that supports MIDI over USB ",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Teensy","MIDI"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/kelpie",
+        "name":"Kelpie",
+        "author":"Kenneth Marut",
+        "link":"https://github.com/friedpies/kelpie-pocket-synth",
+        "demo":"https://www.youtube.com/watch?v=N3tbNFI8Xls",
+        "picture":"../pics/kelpie.jpg",
+        "description":"Portable polyphonic digital synthesizer.",
+        "notes":"The device consists of 16 knobs and 4 LED buttons, a standard MIDI input, 1/4 mono output, 1/8 stereo output, and a micro-USB input (for programming). The goal of this project was to create a budget digital synthesizer for all experience levels that could be easily interfaced with a MIDI keyboard and used in live performances. This is a no-frills synthesizer, with no presets, arpeggiator, or storage. ",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Teensy","Polyphonic","MIDI"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/lmn-3",
+        "name":"LMN-3",
+        "author":"Fundamental Frequency",
+        "link":"https://github.com/FundamentalFrequency",
+        "demo":"https://www.youtube.com/watch?v=h5UmPTttN1s",
+        "picture":"../pics/lmn-3.jpg",
+        "description":"OP-1 inspired DAW-in-a-box",
+        "notes":"Raspberry Pi and Teensy -based digital synth with wide range of digital audio workstation features and OP-1 -like interface.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
+        "tags":["Digital","Teensy","Raspberry"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/le-strum",
+        "name":"Le Strum",
+        "author":"six4pix",
+        "link":"https://github.com/hotchk155/Voici-Le-Strum",
+        "demo":"https://www.youtube.com/watch?v=3jQ4zBmrjXg",
+        "picture":"../pics/le-strum.jpg",
+        "description":"Compact and very simple yet funny MIDI strummer.",
+        "notes":"Connect LE STRUM to your MIDI synthesizer or computer running synth software, hold down a combination of buttons to select a chord, then use the “stylus” to play MIDI notes by touching the contact pads on the top right of the board. As the name suggests, you can “strum” across chords using the stylus, providing an unique and expressive MIDI controller.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Digital","PIC","MIDI"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/lil-cmos-toolbox",
+        "name":"Lil CMOS toolbox",
+        "author":"Planeteatrr",
+        "link":"https://github.com/diysynth/STANDALONE-DEVICES",
+        "demo":"https://www.youtube.com/watch?v=F06fM2n9Yoc",
+        "picture":"../pics/lil-cmos-toolbox.jpg",
+        "description":"CMOS-based semi-modular synthesizer.",
+        "notes":"The idea started as an expander for the Behringer Neutron. I always felt that the Neutron is lacking some kind of modulation for the oscillator section. So the Toolbox provides a ring-modulator (quite similar to the one in the Korg MS-20) and a sub-oscillator, to fulfill my needs. Here is a list of the features: - Ring-modulator - Sub-oscillator (-1/-2 Octave) - Clock divider - 2 oscillators (square) - Comparator - Buffer",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":false},{"Enclosure":true}],
+        "tags":["Analog","Modular"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/lil-mono",
+        "name":"Lil' mono",
+        "author":"S Jazura",
+        "link":"https://github.com/diysynth/STANDALONE-DEVICES/tree/main/LIL'-MONO-SYNTH",
+        "demo":"https://www.youtube.com/watch?v=dz-d9Gt5xwY",
+        "picture":"../pics/lil-mono.jpg",
+        "description":"Simple east coast analog synthesizer.",
+        "notes":"It contains a sawtooth wave VCO that tracks V/Oct, a square wave sub-oscillator, a simple and dirty sounding resonant VCF, a VCA and an attack/release envelope generator that can modulate the amplitude and the filter cut-off frequency. The VCO doesn't track very precise but okay-ish pitch tracking with +/-5 cents of tracking error can be expected over a span of 4 to 5 octaves.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":false},{"Enclosure":true}],
+        "tags":["Monophonic","Modular","Analog"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/lunchbeat",
+        "name":"Lunchbeat",
+        "author":"Buranelectrix",
+        "link":"https://github.com/buranelectrix/lunchbeat-PCB",
+        "demo":"https://www.youtube.com/watch?v=9ZvAgihcfdg",
+        "picture":"../pics/lunchbeat.jpg",
+        "description":"1-bit percussion sounds and a sequencer.",
+        "notes":"The grittiest drum machine ever. ",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Drum","Digital"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/midivampire-ii",
+        "name":"MIDIvampire II",
+        "author":"Open Music Labs",
+        "link":"http://www.openmusiclabs.com/projects/midivamp2/index.html",
+        "demo":"https://www.youtube.com/watch?v=oQt7cyDuBHY",
+        "picture":"../pics/midivampire-ii.jpg",
+        "description":"4 voice drum machine that is powered from the MIDI data line.",
+        "notes":"It has 2 wavetable voices for making kick drums, toms, wood blocks, bells, and a host of other sounds. There is a voice set aside for hi-hats and cymbals, and another which is a filtered noise source, which can make snares and hollow-tube sounds. Each voice has separate attack, decay, and release, along with frequency sweep, and a bunch of other effects for warping the sounds to fit all your percussive needs. And, there are independent outputs for each voice.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Drum","AVR","Kit","MIDI"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/meebleeps-freaq-fm",
+        "name":"Meebleeps Freaq FM",
+        "author":"Meebleeps",
+        "link":"https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth",
+        "demo":"https://www.youtube.com/watch?v=KD6IrcmMkoA",
+        "picture":"../pics/meebleeps-freaq-fm.jpg",
+        "description":"Dual-Voice 2 operator 8-bit FM Arduino Synth with 2-track generative sequencer, Mozzi library, Volca form-factor.",
+        "notes":"Voices - 2 independent FM voices - 2-operator FM (for old-school prince of persia vibes! 😂) - Multi-mode FM ratios - quantised, free-multiple, independent - Multiple operator waveforms for carrier & modulator - Sine, Saw, Reverse Saw, Square, Noise, Off - Modulation level controlled by Attack/Decay envelope and LFO per-voice - Multiple LFO waveforms (same tables as the carrier oscillators) Sine, Saw, Reverse Saw, Square, Noise Sequencer - 2/1.5 track polymetric sequencer with up to 16 steps per track (Both tracks use same note sequence but can have different step-counts for polymetric phasing) - Multiple generative algorithms - (semi)random notes, (semi)random runs, arpeggio, drone - Sequence mutates/evolves at user-defined rate & note-density - Selectable tonic, octave & scale quantisation (Major, Minor, Pentatonic, Phrygian (GOA!), Octaves, Fifths) - Tap-tempo control - Sync input & output (Korg Volca compatible) - 16-step parameter-lock recording of synth parameters for track 1 (the Elektron way!) ",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Arduino","Digital","Monophonic","Sequencer"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/meebleeps-mutant",
+        "name":"Meebleeps Mutant",
+        "author":"Meebleeps",
+        "link":"https://github.com/Meebleeps/MeeBleeps-Mutant-Synth",
+        "demo":"https://www.youtube.com/watch?v=d2Lml1Z9uWc",
+        "picture":"../pics/meebleeps-mutant.jpg",
+        "description":"8-Bit 2-oscillator subtractive Arduino synth for generative techno, using Mozzi library, in Volca form-factor.",
+        "notes":"Synth Voice Features - 2 saw oscillators - Multiple tuning modes for 2nd oscillator - off, detune, fifths & octaves up/down - Digital low pass filter with variable cutoff and resonance - Variable level ducking/sidechain effect Sequencer - Generative sequencer mutates/evolves at user-defined rate - Variable sequence mutation probability & note-density - Variable sequencer length (1-16 steps) - Sync input & output (Korg Volca compatible) - Selectable tonic note - Selectable scale quantisation (Major, Minor, Pentatonic, Phrygian (GOA!), Octaves, Fifths) - 16-step parameter-lock recording of synth parameters (the Elektron way!) - Retrig (clone) button for fills - Tap-tempo control\nMore details in Reddit post .",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Arduino","Digital","Monophonic","Sequencer"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/meeblip-micro",
         "name":"Meeblip Micro",
         "author":"Meeblip",
         "link":"https://github.com/MeeBlip/meeblip-circuits",
@@ -767,6 +323,133 @@
     },
 
     {
+        "permalink":"/synths/meeblip-se",
+        "name":"Meeblip SE",
+        "author":"Meeblip",
+        "link":"https://github.com/MeeBlip/meeblip-circuits",
+        "demo":"https://www.youtube.com/watch?v=YFKGGdwSR2o",
+        "picture":"../pics/meeblip-se.jpg",
+        "description":"Hackable monophonic synth based on atmega32.",
+        "notes":"Very same synth as Meeblip Micro, but with knobs and switches. Here it is MIDI mapping",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Monophonic","Digital","AVR","MIDI"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/meeblip-triode",
+        "name":"Meeblip Triode",
+        "author":"Meeblip",
+        "link":"https://github.com/MeeBlip/meeblip-triode",
+        "demo":"https://www.youtube.com/watch?v=aJCYosgxnHo",
+        "picture":"../pics/meeblip-triode.jpg",
+        "description":"Hackable monophonic synth based on atmega32. It consists of 2 PCBs stacked together.",
+        "notes":"MeeBlip triode's huge sound is driven by three oscillators and a unique twin-t analog lowpass filter. Two digital pulse / pwm / sawtooth oscillators can be detuned and a square wave sub-oscillator adds to the bottom end. For sonic variety, triode also offers hands-on access to 24 grungy wavetables, along with dual envelopes routed to oscillator amplitude and filter cutoff for powerful filter sweeps and effects.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Monophonic","AVR","Digital","MIDI"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/mega-midi",
+        "name":"Mega MIDI",
+        "author":"Aidan Lawrence",
+        "link":"https://github.com/AidanHockey5/MegaMIDI",
+        "demo":"https://www.youtube.com/watch?v=GjcnrMy_QiQ",
+        "picture":"../pics/mega-midi.jpg",
+        "description":"MIDI-compatible Sega Genesis/Megadrive Synthesizer with REAL sound chips.",
+        "notes":"The Mega MIDI is not an emulator. This is the real deal. Both the genuine YM2612 and the SN76489 PSG sound chips are on-board. Further still, the patches are not recreated “sound-alikes” either. They are one-for-one instruments with identical settings to those found within their parent games. You are playing the actual patches on authentic hardware.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["AVR","Polyphonic","Digital","Chiptune","Kit","MIDI"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/mini-dexed",
+        "name":"Mini Dexed",
+        "author":"Probonopd",
+        "link":"https://github.com/probonopd/MiniDexed",
+        "demo":"https://www.youtube.com/watch?v=Z3t94ceMHJo",
+        "picture":"../pics/mini-dexed.jpg",
+        "description":"FM synthesizer closely modeled on the famous DX7",
+        "notes":"MiniDexed is a FM synthesizer closely modeled on the famous DX7 by a well-known Japanese manufacturer running on a bare metal Raspberry Pi (without a Linux kernel or operating system). On Raspberry Pi 2 and larger, it can run 8 tone generators, not unlike the TX816/TX802 (8 DX7 instances without the keyboard in one box).\n- Uses Synth_Dexed with circle-stdlib - SD card contents can be downloaded from GitHub Releases - Runs on all Raspberry Pi models (except Pico); see below for details - Produces sound on the headphone jack, HDMI display or audio extractor (better), or a dedicated DAC (best) - Supports multiple voices through Program Change and Bank Change LSB/MSB MIDI messages - Loads voices from .syx files from SD card (e.g., using getsysex.sh or from Dexed_cart_1.0.zip) - Menu structure on optional HD44780 display and rotary encoder - Runs up to 8 Dexed instances simultaneously (like in a TX816) and mixes their output together - Allows for each Dexed instance to be detuned and stereo shifted - Allows to configure multiple Dexed instances through performance.ini files - Compressor effect - Reverb effect - Voices can be edited over MIDI, e.g., using the synthmata online editor (requires additional hardware)",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
+        "tags":["Digital","Raspberry","MIDI"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/mixtape-alpha",
+        "name":"Mixtape Alpha",
+        "author":"Open Music Labs",
+        "link":"http://wiki.openmusiclabs.com/wiki/MixtapeAlpha",
+        "demo":"https://www.youtube.com/watch?v=TBudhbE61U4",
+        "picture":"../pics/mixtape-alpha.jpg",
+        "description":"Credit-card sized Atmega328-based 4 voice synth.",
+        "notes":"It has a stylophone style input for continuous note generation, and 6 buttons for discrete notes. With 4 voices, 4 effects, and 5 note polyphony there is quite a range of expression. But, the best part is, you can record the songs you make, and trade mixtapes with your friends! Perhaps even better, it’s based on the ATmega328p, and can be hacked to make even crazier sounds than we came up with. More info at OML page",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Digital","AVR","Kit"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/nsynth-super",
+        "name":"NSynth Super",
+        "author":"Magenta (Google)",
+        "link":"https://github.com/googlecreativelab/open-nsynth-super",
+        "demo":"https://www.youtube.com/watch?v=oJtnn1Gqx9I",
+        "picture":"../pics/nsynth-super.jpg",
+        "description":"An experimental physical interface for the NSynth algorithm. ",
+        "notes":"NSynth (Neural Synthesizer) it’s a machine learning algorithm that uses a deep neural network to learn the characteristics of sounds, and then create a completely new sound based on these characteristics.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
+        "tags":["Raspberry","Digital","MIDI"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/nth-synth",
+        "name":"NTH synth",
+        "author":"John Staskevich + Kevin Holland",
+        "link":"https://github.com/NTHSynth/NTH_DSP",
+        "demo":"https://www.youtube.com/watch?v=BX9g7MI1weA",
+        "picture":"../pics/nth-synth.jpg",
+        "description":"8-bit hackable mono synth.",
+        "notes":"The NTH is designed so that a complete beginner can quickly craft incredibly varied timbres. For the synth veteran, the NTH offers relief from layered menus and obscured functions. The NTH puts a smile on the face of musicians and non-musicians, synth geeks and synth novices, children and adults alike.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Digital","PIC","MIDI"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/nano-minipops",
+        "name":"Nano minipops",
+        "author":"Jan Ostman",
+        "link":"https://github.com/NANOmodules/NANO-Minipops",
+        "demo":"https://www.youtube.com/watch?v=RJu-DWOXwls",
+        "picture":"../pics/nano-minipops.jpg",
+        "description":"Korg minipops made around Arduino.",
+        "notes":"The hardware consists in an Arduino Uno including it shield with 9 slide switches, 2 rotary potentiometers and 1 LED. Software in the CODE folder contains all the necessary to convert your Arduino Uno in a Minipops drum box.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","Arduino","Monophonic"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/noise-toaster",
+        "name":"Noise Toaster",
+        "author":"Ray Wilson",
+        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
+        "demo":"https://www.youtube.com/watch?v=smFKx6gfOd0",
+        "picture":"../pics/noise-toaster.jpg",
+        "description":"Simple, full analog noise synth.",
+        "notes":"The MFOS Noise Toaster circuit consists of seven main components: a voltage controlled oscillator (VCO), a white noise generator, a voltage controlled low pass filter (VCF), a low frequency oscillator (LFO), a simple AR envelope generator (AREG), a simple voltage controlled amplifier (VCA), and a one watt amplifier that drives a small speaker. The unit is powered by one nine volt battery and due to the low current drain of the LM324 (Lo-Power Quad Op Amp) it gets a lot of miles out of a nine volt battery.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
+        "tags":["Analog","Monophonic"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/norns-shield",
         "name":"Norns shield",
         "author":"Monome",
         "link":"https://github.com/monome/norns-shield",
@@ -777,5 +460,383 @@
         "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
         "tags":["Raspberry","Digital","Kit","MIDI"],
         "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/otto",
+        "name":"OTTO",
+        "author":"Bitfield Audio",
+        "link":"https://github.com/bitfieldaudio/OTTO",
+        "demo":"https://www.youtube.com/watch?v=nBDd2tuIafM",
+        "picture":"../pics/otto.jpg",
+        "description":"Digital hardware groovebox, with synths, samplers, effects and a sequencer with an audio looper.",
+        "notes":"The interface is flat, modular and easy to use, but most of all, it aims to encourage experimentation. The workflow is intended to be minimalistic with a minimum of menu-diving and everything at most a couple of intuitive button presses away.\nThe OTTO is open source (except for commercial use), and we value our community highly! \nHardware repo",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Polyphonic","Digital"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/opendeck",
+        "name":"OpenDeck",
+        "author":"ShanteaControls",
+        "link":"https://github.com/shanteacontrols/OpenDeck",
+        "demo":"https://www.youtube.com/watch?v=ydmWxC_y35U",
+        "picture":"../pics/opendeck.jpg",
+        "description":"Open platform for ultimate MIDI control deck building",
+        "notes":"OpenDeck is a platform for building MIDI controllers. It is a firmware running on various boards which transforms them into class-compliant USB MIDI devices, making them compatible with any MIDI software on any operating system. There is plenty of 3rd party HW designs in their repo.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["MIDI","Kit"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/poly555",
+        "name":"POLY555",
+        "author":"Oskitone",
+        "link":"https://github.com/oskitone/poly555",
+        "demo":"https://www.youtube.com/watch?v=YcFjmL8s72Y",
+        "picture":"../pics/poly555.jpg",
+        "description":"Polyphonic, analog, square wave synth based on the 555 timer chip.",
+        "notes":"- 20 keys control 20 555 timers under a plexiglass window - Custom PCB and 3D-printed hardware, all designed by yours truly - Satisfying clicky tactile switches - Built-in amplifier and speaker - Soldered, assembled, tuned, and ready to go! ",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":false},{"Docs":true},{"Enclosure":true}],
+        "tags":["Analog","Polyphonic","Kit"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/paper-bits",
+        "name":"Paper Bits",
+        "author":"Wolfgang Spahn",
+        "link":"https://paperpcb.dernulleffekt.de/doku.php?id=paper_bits:paper_bits_main",
+        "demo":"https://www.youtube.com/watch?v=4CEhR68YwA8",
+        "picture":"../pics/paper-bits.jpg",
+        "description":"Small, modular synthesiser system. Voltage controlled, stripboard compatible.",
+        "notes":"Currently, there are 19 modules published that can be put together in different ways.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Digital","Analog","Modular"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/plinky",
+        "name":"Plinky",
+        "author":"Alex \"mmalex\" Evans",
+        "link":"https://github.com/plinkysynth/plinky_public/tree/main",
+        "demo":"https://www.youtube.com/watch?v=us__mX0_Aqk",
+        "picture":"../pics/plinky.jpg",
+        "description":"8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds",
+        "notes":"It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth over CV or MIDI, with line-level stereo input and a headphone output, all powered by USB.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
+        "tags":["Digital","Fx","MIDI","Modular","Kit"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/polaron",
+        "name":"Polaron",
+        "author":"Zueblin",
+        "link":"https://github.com/zueblin/Polaron",
+        "demo":"https://www.youtube.com/watch?v=JC_pZTxMb0c",
+        "picture":"../pics/polaron.jpg",
+        "description":"Digital drum machine based on the Teensy 3.6.",
+        "notes":"Main features: - 16 step sequencer - 6 instrument tracks - 16 patterns per track - load/save projects to SD card - 2 pots for parameter control - parameter locks: all instrument parameters can be recorded for each step - different pattern length for each instrument track - sync to midi-clock (usb-midi) or trigger input - crunchy 12bit stereo outputs ",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Drum","Digital","Teensy","MIDI"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/polykit-x1",
+        "name":"Polykit X1",
+        "author":"Polykit",
+        "link":"https://github.com/polykit/polykit-x-monosynth",
+        "demo":"https://www.youtube.com/watch?v=aMLMR25Tyi0",
+        "picture":"../pics/polykit-x1.jpg",
+        "description":"Full analog, semi modular (!), patchable synthesizer. It is an interface that works in conjunction with open source voice card.",
+        "notes":"Voice card specs - Single oscillator with saw, triangle and pulse output - Multiple VCAs to blend between different input signals, a main VCA for the envelope and a panning VCA for stereo output - An additional external input that can be mixed in, eg. a noise signal - One envelope generator for the VCA. It can modulate filter frequency and resonance, also with an inverted signal - A pole-mixing multimode filter with 8 filter responses: - 4P LP - 2P LP - 4P HP - 2P HP - 4P BP - 2P BP - 3P AP + 1P LP - 4P N - There are multiple options two switch and blend between different signals and filter responses - PWM, FM and synchronisation inputs ",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":false},{"Docs":false},{"Enclosure":true}],
+        "tags":["Monophonic","Modular"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/portable-synth",
+        "name":"Portable synth",
+        "author":"Prajwal Tumkur Mahesh",
+        "link":"https://github.com/prajwal1121/Portable-Synth",
+        "demo":"https://www.youtube.com/watch?v=yj9AeDa9qw8",
+        "picture":"../pics/portable-synth.jpg",
+        "description":"OP-1 style portable groovebox based around Teensy 4.",
+        "notes":"Work in progress, but 2nd version of hardware already published. ",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Digital","Polyphonic","Teensy"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/preenfm-2",
+        "name":"PreenFM 2",
+        "author":"Xavier Hosxe",
+        "link":"https://github.com/Ixox/preenfm2",
+        "demo":"https://www.youtube.com/watch?v=QXQLlKPX7CQ",
+        "picture":"../pics/preenfm-2.jpg",
+        "description":"Preenfm brings the old FM synthesis in small open-source modern DIY boxes.",
+        "notes":"There is 4 independent instruments. Each of them has: - Powerful arpeggiator (Mutable-Instruments opensource algorithm). - 1 effect Slot (LP, HP, Bass boost, Band Pass, crusher) - 1 gate effect - 4 rapid access performance parameters - The 4 instruments can be saved all at the same time in combo presets. - Each instrument has its own modifiable midi channel. They can share the same for FAT quadruple timbres notes. - Modifiable number of allocated voices… Between 1 and 14. - 28 FM algorithms from 3 to 6 operators\nDocumentation NB: New PreenFM 3 is not open-source anymore. Please do not submit this design.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Digital","Polyphonic","Kit","MIDI"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/protean",
+        "name":"Protean",
+        "author":"Kinetik Labs",
+        "link":"https://github.com/pangrus/Protean/tree/master",
+        "demo":"https://www.youtube.com/watch?v=irRmHTh5Q7I",
+        "picture":"../pics/protean.jpg",
+        "description":"ATtiny-based motion texture source",
+        "notes":"Protean incorporates 3 independent sound generators for the production of a wide variety of sonic environments with a ever changing expressive vitality.\nThe sound generators have complementary timbral characteristic covering all the frequency spectrum and may also be modulated by the two low frequency oscillators implemented in the circuit, generating hypnotic sounds which evolve over time. ",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","Monophonic","AVR"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/quantum-dj",
+        "name":"Quantum DJ",
+        "author":"Alexander Zolotov",
+        "link":"https://warmplace.ru/hard/qdj/?fbclid=IwAR3kJHlGsxXUGChfXL_qjapHxT5TMV6Du6AfpE0VJ6x5OJzYAFS-qSvjPYk",
+        "demo":"https://www.youtube.com/watch?v=KybklDJELEo",
+        "picture":"../pics/quantum-dj.jpg",
+        "description":"Electromagnetic noise to 1bit sound converter",
+        "notes":"Quantum DJ is an electronic creature that listens to the electromagnetic noise around us, analyzes it and generates some sort of 1-bit sound art depending on its internal state (mood).",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Monophonic","Digital"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/real-sid-shield",
+        "name":"Real SID shield",
+        "author":"A.T.Brask",
+        "link":"https://github.com/emceha/RealSIDShield",
+        "demo":"https://www.youtube.com/watch?v=aWzvNC8BdNY",
+        "picture":"../pics/real-sid-shield.jpg",
+        "description":"Digital interface to SID chip (Commodore 64).",
+        "notes":"An Arduino shield that makes it easy to use a MOS Technology 6581/8580 SID chip (the famous C64 sound chip)",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","Arduino","Chiptune"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/s54-livs-synth",
+        "name":"S54 (Liv's Synth)",
+        "author":"SloBloLabs",
+        "link":"https://github.com/SloBloLabs/LivSynth/tree/main",
+        "demo":"https://www.youtube.com/watch?v=09B7NOryfzA",
+        "picture":"../pics/s54-livs-synth.jpg",
+        "description":"Hybrid mono synth build with full analogue signal path.",
+        "notes":"ESP32 based mono synth with sequencer.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":true}],
+        "tags":["Monophonic","Digital","Analog","ESP32"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/shruthi-1",
+        "name":"Shruthi-1",
+        "author":"Mutable Instruments",
+        "link":"https://mutable-instruments.net/archive/shruthi/build/",
+        "demo":"https://www.youtube.com/watch?v=PVcmQ_h4bx8",
+        "picture":"../pics/shruthi-1.jpg",
+        "description":"Hybrid synthesizer with digital generators and swappable analog filter boards.",
+        "notes":"The Shruthi contains two section: a digital section (“control board” or “digital board”), containing the display, main microcontroller, switches and pots ; and an analog section (“filter board”) hosting the VCF, VCA, input mixer and the output stage. Several variants of the filter board are available to provide a broad range of sounds.\nThere is also Shruti XT option with additional physical controls.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":true}],
+        "tags":["Digital","Analog","AVR","Monophonic","MIDI"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/sound-lab-mini-synth",
+        "name":"Sound Lab Mini-Synth",
+        "author":"Ray Wilson",
+        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
+        "demo":"https://www.youtube.com/watch?v=fOlqHWykypg",
+        "picture":"../pics/sound-lab-mini-synth.jpg",
+        "description":"Full analog legendary design by Ray Wilson.",
+        "notes":"This project is fun for someone with intermediate to advanced electronics skills who wants to make cool sounds. It makes a great first synth project but is interesting enough for the seasoned synth-diyer too. The board includes 1V/oct scale adjustment trimmers for the oscillators You will get a couple (maybe three) octaves of in tune scale.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
+        "tags":["Analog","Monophonic"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/sound-lab-mini-synth-mkii",
+        "name":"Sound Lab Mini-Synth MkII",
+        "author":"Ray Wilson",
+        "link":"http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871",
+        "demo":"https://www.youtube.com/watch?v=-ijNzWQH0dk",
+        "picture":"../pics/sound-lab-mini-synth-mkii.jpg",
+        "description":"Full analog Ray Wilson's synth. Descendant of Sound Lab Mini-Synth.",
+        "notes":"'- Two Musically Accurate VCOs With 1V/Octave Tracking - White Noise Generator - Audio Mixer With External Input - State Variable VCF Low-Pass & Band Pass Response - VCF Doubles As 1V/Oct Tracking Sine Wave Oscillator - VCF Has Multiple Modulation Options - VCA Has Multiple Modulation Options - LFO (Ramp, Saw, Tri and Square) - Two AD/AR Generators - Keyboard Control Inputs - VCOs and VCF Normalized To Keyboard CV Input - AD/AR Generators Normalized To Keyboard Gate Input - Patchable Sample And Hold - Two Repeat Gate Generators for AD/AR Generators - AD/AR Generators Normalized For S&H Triggering ",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":false}],
+        "tags":["Analog","Monophonic"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/teensy-audio-fx",
+        "name":"Teensy Audio FX",
+        "author":"Matt Venn",
+        "link":"https://github.com/mattvenn/teensy-audio-fx",
+        "demo":"https://www.youtube.com/watch?v=zHr6EKKnGfY",
+        "picture":"../pics/teensy-audio-fx.jpg",
+        "description":"Playable effects modeled on the Teenage Engineering PO series",
+        "notes":"'- A Teensy 4 based FX unit with Pocket Operator style and playability. - 12 knobs, 4 buttons each with LED, and 4 LEDs showing automation cycle. - Combination of filtered reverb, ping pong filtered delay and a noise source, but this is customisable. - Each knob can be automated (a bit like punch in effects on the Pocket Operators) - Tap tempo and PO sync",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Teensy","Fx"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/teensy-beats-shield",
+        "name":"Teensy Beats Shield",
+        "author":"Chris Miller",
+        "link":"https://hackaday.io/project/161127-teensy-beats-shield",
+        "demo":"https://www.youtube.com/watch?v=HSS_-nJva-s",
+        "picture":"../pics/teensy-beats-shield.jpg",
+        "description":"Handheld audio sequencer. PO style.",
+        "notes":"This project aims to fill a void in open source handheld musical instruments. Being open source and built on a highly capable and extensible platform, hackers are free to modify, create, and remix this design for the common good. I'm very open to suggestions, patches, etc.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Teensy","Sequencer","Digital"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/totoro",
+        "name":"Totoro",
+        "author":"SyntherJack",
+        "link":"https://github.com/Atarity/totoro-synth",
+        "demo":"https://www.youtube.com/watch?v=yHeWAp9w_LM",
+        "picture":"../pics/totoro.jpg",
+        "description":"Cheap and easy to solder 2 oscillators synth.",
+        "notes":"Totoro is a portable, analog synth made on top of MCP6004 opamp. It features 2 VCOs (one could act as LFO) and simple VCF.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":true}],
+        "tags":["Monophonic","Analog"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/wtpa2-where-is-the-party-at-2",
+        "name":"WTPA2 (Where is the party at 2)",
+        "author":"Todd Bailey",
+        "link":"http://blog.narrat1ve.com/wtpa2/",
+        "demo":"https://www.youtube.com/watch?v=pAaV_6Hzd2I",
+        "picture":"../pics/wtpa2-where-is-the-party-at-2.jpg",
+        "description":"8-bit audio sampler kit which does some stuff that no other samplers out there do.",
+        "notes":"WTPA is designed to the following aesthetic ends: to be a good and clear example of fairly “traditional” analog (low noise, relatively low frequency, high headroom, good routing, sensible ADCs and DACs etc) and digital (clean low level code, parallel memory architecture, I/O expansion via latches, various serial communication protocols) circuit design, and is catered to the determined (though not necessarily experienced) kit-builder who really, truly wants to learn more about how electronics work and how to get better at their craft.\n[Github repo](https://github.com/ToddBailey/WTPA2)",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Digital","Sampler","Analog","MIDI"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/wee-noise-maker",
+        "name":"Wee Noise Maker",
+        "author":"Fabien Chouteau",
+        "link":"https://hackaday.io/project/19326-wee-noise-maker",
+        "demo":"https://www.youtube.com/watch?v=fAjKelBxt00",
+        "picture":"../pics/wee-noise-maker.jpg",
+        "description":"Pocket size sampler/sequencer with audio DAC, headphone amplifier and audio input.",
+        "notes":"Wee Noise Maker is a pocket size music synthesizer based on the STM32F427 ARM Cortex-M4F micro-controller. It features an audio DAC with headphone amplifier, audio input, 96x16 OLED screen, 2 rotary encoders, 24 tactile switches and LEDs, micro SD card slot, LiPo battery charger and an I2C extension port. Hardware repo",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","Sequencer"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/ym2149-synth",
+        "name":"YM2149 Synth",
+        "author":"Timothy Lamb",
+        "link":"https://github.com/trash80/Ym2149Synth",
+        "demo":"https://www.youtube.com/watch?v=0PLkJXF9rZ8",
+        "picture":"../pics/ym2149-synth.jpg",
+        "description":"Neat little chip that was used in various retro arcade machines and consoles, including the Atari ST.",
+        "notes":"Controllable with MIDI or Max patch. ",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":false},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","Chiptune","Teensy","Polyphonic","MIDI"],
+        "level":"Intermediate"
+    },
+
+    {
+        "permalink":"/synths/yowler",
+        "name":"Yowler",
+        "author":"Cat full of ghosts",
+        "link":"https://github.com/cfoge/the_Yowler",
+        "demo":"https://www.youtube.com/watch?v=O0ltJwYQ1AM",
+        "picture":"../pics/yowler.jpg",
+        "description":"Versatile small form noise/drone synth.",
+        "notes":"Kickstarter funded project now opened. - External trigger + Diode VCA: trigger the Yowler from external gear, use it as a drum synth, built in trigger button and latch + trigger in acts as a simple vca! 4 - Oscillators and 2 XOR mixers: lots of grinding, driving sounds, osc 3 and 4 can be turned off and on. - Built in speaker + mono/stereo output: means you can use it with mono gear like guitar pedals or a modular synth, or stereo gear like mixers, headphones etc... - Pitch knobs + light dependent pitch control: get crazy sounds from the three oscillators by shining light on them.",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":false},{"Docs":true},{"Enclosure":true}],
+        "tags":["Analog"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/zekit",
+        "name":"ZeKit",
+        "author":"Fred's Lab",
+        "link":"https://github.com/Marzac/zekit",
+        "demo":"https://www.youtube.com/watch?v=wc9zw-9Cn2Q",
+        "picture":"../pics/zekit.jpg",
+        "description":"4 voice paraphonic synth.",
+        "notes":"4 voice paraphonic microsynth, featuring a simple step sequencer, various digital waveforms, an analog VCF, VCA and two AR analog envelopes.\nThe instrument can be controlled using MIDI (notes & clock) and has both a sync and audio inputs. External audio sources can be mixed in or be processed through the VCF / VCA.",
+        "artifacts":[{"Schematic":true},{"PCB":false},{"BOM":true},{"FW":true},{"Docs":false},{"Enclosure":false}],
+        "tags":["Digital","AVR","Kit","MIDI"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/zynthian",
+        "name":"Zynthian",
+        "author":"Zynthian community",
+        "link":"https://zynthian.org/",
+        "demo":"https://www.youtube.com/watch?v=Aq9Bavd7OqY",
+        "picture":"../pics/zynthian.jpg",
+        "description":"Open Platform for Sound Synthesis & Processing build on top of Raspberry Pi.",
+        "notes":"It is possible to made it out of aftermarket parts. But if you want to use controls, MIDI, etc, you need to make (or buy in kit) custom PCBs. - Repos collection - Hardware repo - Wiki - Assembly docs",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Polyphonic","Raspberry","Digital","Kit","MIDI"],
+        "level":"Newbe"
+    },
+
+    {
+        "permalink":"/synths/x0x-heart",
+        "name":"x0x heart",
+        "author":"Open Music Labs",
+        "link":"http://www.openmusiclabs.com/projects/x0x-heart/",
+        "demo":"https://www.youtube.com/watch?v=QQPS4Y4jzk4",
+        "picture":"../pics/x0x-heart.jpg",
+        "description":"Heart of the infamous TB-303, surgically extracted to be transplanted into your designs.",
+        "notes":"The x0x-heart is just the analog section of the TB-303, replicated with SMT components, and made small enough to fit into a Eurorack modular format. It even has a Eurorack power header on it. More in OML wiki",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Analog","Modular"],
+        "level":"Advanced"
+    },
+
+    {
+        "permalink":"/synths/x0xb0x",
+        "name":"x0xb0x",
+        "author":"Adafruit",
+        "link":"https://www.ladyada.net/make/x0xb0x/index.html",
+        "demo":"https://www.youtube.com/watch?v=paWAYuZ5I2w",
+        "picture":"../pics/x0xb0x.jpg",
+        "description":"Full reproduction of the original Roland TB-303 synthesizer, with fully functional sequencer. ",
+        "notes":"The sequencer can be programmed just like the original 303 (ok its actually a little easier, we think) and can be used to control other synthesizers via any of its various output formats. 128 banks of track memory and 64 banks of pattern memory are stored in onboard EEPROM, no battery-backup is needed!",
+        "artifacts":[{"Schematic":true},{"PCB":true},{"BOM":true},{"FW":true},{"Docs":true},{"Enclosure":false}],
+        "tags":["Drum","Sequencer","Digital","Kit","MIDI"],
+        "level":"Advanced"
     }
 ]

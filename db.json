@@ -2,8 +2,10 @@
 layout: none
 ---
 [
-{%- for item in site.posts %}
+{% assign sortedPosts = site.posts | sort: "title" %}
+{%- for item in sortedPosts %}
     {
+        "permalink":{{- item.url | jsonify }},
         "name":{{- item.name | jsonify }},
         "author":{{- item.author | jsonify }},
         "link":{{- item.link | jsonify }},
