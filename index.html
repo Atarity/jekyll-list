@@ -1,4 +1,5 @@
 ---
+layout: none
 ---
 <!DOCTYPE html>
 <html>
@@ -7,30 +8,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="yes" name="mobile-web-app-capable">
-    <title>{{ site.title}}</title>
+
+    <title class="title"></title>
+
+    <link rel="stylesheet" media="all" href="styles.css?v=11" />
+
 </head>
+
+
 <body>
+
+    <div class="jlist-header-img" style="background-image: url(https://assets.softr-files.com/applications/c4796cba-c726-44d8-b78d-3bed24502040/assets/61761a41-1ab8-492e-a41c-680e653d9eef.jpeg);">
+        <div class="jlist-header-img-inner">
+            <h2 class="title"></h2>
+            <p>Collection of <span class="total">-</span> DIY-friendly hardware synthesizers and related musical equipment you can build on your own. All open-source.</p>
+        </div>
+    </div>
+
     <div class="wrap"></div>
+
 <body>
-<script type="text/javascript" src="jlist.js?v=2"></script>
+
+<script type="text/javascript" src="jlist.js?v=7"></script>
+
 <script>
+
 list = new JList({
-    name: "{{ site.title}}",
-    faviconText: "DS",
+    el: ".wrap",
+    name: "{{ site.title }}",
+    nameShort: "DS",
+    copyright: "&copy; {Y} snnkv.com",
+    headerTitle: false,
     limit: 12,
     db: "{{ site.db }}",
     imgPath: "{{ site.pics }}",
-    cardFields: [
-        {field: "name"},
-        {field: "description"},
-        {field: "notes"},
-        {field: "tags"},
-        {field: "link", link: "Go to project"},
-        {field: "author", label: "Author:"},
-        {field: "level", label: "Skills level:"},
-        {field: "artifacts", label: "What's published:"},
-        {field: "demo", label: "Demo", link: ""},
+    fields: [
+        {"name": "Category", "field": "tags", "type": "tag", "hint": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+        {"name": "Skill levels", "field": "level", "type": "tag", "hint": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+        {"name": "Artifacts", "field": "artifacts", "type": "tag", "hint": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."},
+        {"name": "Author", "field": "author", "type": "select"},
+    ],
+    menu: [
+        {name: "GitHub", url: "https://github.com/Atarity/diy-synths"},
+        {name: "About", url: "https://snnkv.com"}
     ]
 });
+
 </script>
 </html>

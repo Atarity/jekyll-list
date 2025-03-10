@@ -1,5 +1,3 @@
----
----
 class JList {
 
     constructor(param) {
@@ -8,7 +6,9 @@ class JList {
 
         Object.assign(this, {
             name: "JList",
-            faviconText: "",
+            copyright: "&copy; JList",
+            nameShort: "",
+            headerTitle: true,
             el: "#jlist",
             limit: 10,
             db: "db.json",
@@ -22,7 +22,8 @@ class JList {
         }, param);
 
         this.currentPage = 1;
-        this.totalPages = 0;
+        this.totalPages  = 0;
+        this.filtered    = false;
 
         this.init();
 
@@ -30,17 +31,22 @@ class JList {
 
     init() {
 
-        this.css();
-
         let wrap = document.querySelector(this.el);
-        if (!wrap || !wrap.length) { wrap = document.querySelector("body").firstElementChild; }
+        if (!wrap) { wrap = document.querySelector("body").firstElementChild; }
 
         this.wrap = wrap;
         this.wrap.classList.add("jlist-wrap");
 
         this.buildHeader();
         this.buildMain();
+        this.buildMenu();
         this.buildItem();
+
+        this.copyright = this.copyright.replace("{Y}", new Date().getFullYear());
+
+        let footer = document.createElement("footer");
+        footer.innerHTML = this.copyright;
+        this.wrap.appendChild(footer);
 
         document.querySelectorAll(".title").forEach((el) => {
 
@@ -48,9 +54,15 @@ class JList {
 
         });
 
+        document.querySelectorAll(".title-short").forEach((el) => {
+
+            el.textContent = this.nameShort;
+
+        });
+
         document.addEventListener('db-loaded', () => { this.aside() });
 
-        this.favicon(this.faviconText);
+        this.favicon(this.nameShort);
         this.DB_load();
 
         window.addEventListener('scroll', () => this.handleScroll());
@@ -60,14 +72,16 @@ class JList {
     buildHeader() {
 
         let header = document.createElement("header");
-        header.innerHTML = `<h1><a href="#" class="title"></a></h1>
-            <input type="search" placeholder="search..." class="searchbox" /><span class="filter-toggle">filter</span>`;
+
+        let title = this.headerTitle ? '<h1><a href="/" class="title"></a><a href="/" class="title-short"></a></h1>' : '';
+
+        header.innerHTML = `${title}<input type="search" data-field="search" placeholder="search..." class="searchbox" /><span class="filter-toggle" data-toggle="x">filter <i></i></span>`;
 
         this.wrap.appendChild(header);
-        this.headerEl = document.querySelector("aside");
+        this.headerEl = document.querySelector("header");
 
         document.querySelector(".filter-toggle").addEventListener("click", (e) => {
-            document.body.classList.add("filter");
+            this.filterToggle(e.target);
         });
 
     }
@@ -86,12 +100,24 @@ class JList {
 
         document.querySelector(".grid").addEventListener("click", (e) => {
 
-            e.preventDefault();
 
             if (e.target.classList.contains("grid-item")) {
 
-                let ID = e.target.getAttribute("data-id");
-                this.single(ID);
+                let link = e.target.querySelector("a");
+
+                if (link.href == "#" || link.href == (location.origin + location.pathname + "#")) {
+
+                    e.preventDefault();
+
+                    let ID = e.target.getAttribute("data-id");
+                    this.single(ID);
+
+                } else {
+
+                    link.click();
+                    return true;
+
+                }
 
             }
 
@@ -120,9 +146,35 @@ class JList {
 
     }
 
+    buildMenu() {
+
+        if (this.menu && this.menu.length) {
+
+            let ul = document.createElement("ul");
+            ul.classList = "jlist-top-menu";
+
+            for(let m in this.menu) {
+
+                m = this.menu[m];
+
+                let li = document.createElement("li");
+                li.innerHTML = `<li><a href="${m.url}" target="_blank">${m.name}</a></li>`;
+
+                ul.appendChild(li);
+
+            }
+
+            this.headerEl.appendChild(ul);
+
+        }
+
+    }
+
     buildEl(data) {
 
-        let html = `<h3>${data.name}</h3>`,
+        let hint = data.hasOwnProperty("hint") ? data.hint : data.name + " filter";
+
+        let html = `<h3>${data.name} <span class="hint-toggle">?</span><i>${hint}</i></h3>`,
         type = data.type;
 
         if (data.hasOwnProperty("__isGridItem")) {
@@ -180,9 +232,17 @@ class JList {
 
             case "item":
 
-                let img = this.getImage(data);
+                let img = this.getImage(data),
+                link    = data.hasOwnProperty("permalink") ? data.permalink : "#",
+                target  = link == "#"  ? "" : 'target="_blank"';
 
-                html = `<a href="#">
+                console.log(link);
+
+                if (link && link.substring(0,1)=="/") {
+                    link = location.pathname + (link.substring(1));
+                }
+
+                html = `<a href="${link}" ${target}>
                             <div><img src="`+img+`"/></div>
                             <div><h4>${data.author}</h4></div>
                             <div><h2>${data.name}</h2></div>
@@ -257,7 +317,7 @@ class JList {
 
             this.values();
 
-            console.log('Database loaded successfully');
+            console.log('Database loaded successfully with ' + this._db.length + ' entries');
             setTimeout(() => document.dispatchEvent(new Event('db-loaded')), 500);
 
             this.totalPages = Math.ceil(this._db.length / this.limit);
@@ -382,6 +442,8 @@ class JList {
         let item = this._db[0],
         fieldsQty = 0, field, f, div;
 
+        document.querySelector(".total").textContent = this._db.length;
+
         this.asideEl.innerHTML = '';
 
         const fragment = new DocumentFragment();
@@ -403,11 +465,11 @@ class JList {
 
         };
 
-
         div = document.createElement("div");
         div.classList = "aside-filter";
-        div.innerHTML = '<button class="filter-ok">OK</button><button class="filter-clear">Clear</button>';
+        div.innerHTML = '<button class="filter-ok">OK</button><button class="filter-clear">Reset</button>';
         this.asideEl.appendChild(div);
+
 
         document.querySelectorAll(".tag--item").forEach((element) => {
 
@@ -438,6 +500,39 @@ class JList {
 
         });
 
+        document.querySelectorAll(".hint-toggle").forEach((element) => {
+
+            function hintToggle(e) {
+
+                document.querySelectorAll("h3.hint").forEach((element) => {
+                    element.classList.remove("hint");
+                });
+
+                let el = e.target;
+                el.parentNode.classList.add("hint");
+
+                setTimeout(() => {
+                    el.parentNode.classList.remove("hint");
+                }, 5000);
+
+            }
+
+            function hintToggleOff(e) {
+
+                let el = e.target;
+
+                setTimeout(() => {
+                    el.parentNode.classList.remove("hint");
+                }, 1500);
+
+            }
+
+            element.addEventListener("click", hintToggle);
+            element.addEventListener("mouseover", hintToggle);
+            element.addEventListener("mouseout", hintToggleOff);
+
+        });
+
         document.querySelector(".searchbox").addEventListener("keyup", (e) => {
             this.search();
         });
@@ -454,7 +549,7 @@ class JList {
 
         document.querySelector(".filter-ok").addEventListener("click", (e) => {
 
-            document.body.classList.remove("filter");
+            this.filterToggle();
 
         });
 
@@ -469,10 +564,28 @@ class JList {
             });
 
             document.body.classList.remove("filtered");
+
+            this.filterToggle();
+
             this.search();
 
         });
 
+        document.body.addEventListener("click", (e) => {
+
+            if (e.target.classList.contains("hint-toggle")) {
+
+            } else {
+
+                document.querySelectorAll("h3.hint").forEach((element) => {
+                    element.classList.remove("hint");
+                });
+
+            }
+
+        });
+
+        this.filterRestore();
         this.search();
 
         if (location.hash) {
@@ -626,7 +739,70 @@ class JList {
 
     }
 
+    filterToggle(el = "") {
+
+        if (!this.filtered) {
+            document.body.classList.add("filter");
+        } else {
+            document.body.classList.remove("filter");
+        }
+
+        if (!el) {
+            el = document.querySelector(".filter-toggle");
+        }
+
+        let text = el.innerHTML,
+        toggle   = el.getAttribute("data-toggle");
+
+        el.innerHTML = toggle;
+        el.setAttribute("data-toggle", text);
+
+        this.filtered = !this.filtered;
+
+    }
+
+    filterRestore() {
+
+        let filter = {};
+
+        try {
+            filter = JSON.parse(localStorage.getItem("filter"));
+        } catch(e) {}
+
+        for(let f in filter) {
+
+            let fWrap = document.querySelector(".filter[data-field='"+f+"']");
+            if (!fWrap) { fWrap = document.querySelector("*[data-field='"+f+"']"); }
+
+
+            for(let n in filter[f]) {
+
+                let val = typeof filter[f] == "object" ? filter[f][n] : filter[f];
+
+                if (fWrap.classList.contains("tag-list")) {
+
+                    let el = Array.from(document.querySelectorAll(".tag--item")).find(el => el.textContent === val);
+                    if (el) { el.classList.add("active"); }
+
+                } else if (fWrap.tagName == "SELECT" || fWrap.tagName == "INPUT") {
+
+                    if (val) { fWrap.value = val; }
+
+
+                }
+
+
+            }
+
+        }
+
+    }
+
     results(filter = "", page = 1) {
+
+        try {
+            localStorage.setItem("filter", JSON.stringify(filter));
+        } catch(e) {}
 
         let query = this.filter(filter, page);
         if (page == 1) { this.gridEl.innerHTML = ''; }
@@ -655,7 +831,7 @@ class JList {
 
         } else {
 
-            this.gridEl.innerHTML = '<p>nothing found</p>';
+            this.gridEl.innerHTML = '<p>&nbsp;</p><p class="nothing">Nothing found</p><p>&nbsp;</p>';
 
         }
 
@@ -787,551 +963,24 @@ class JList {
 
     }
 
-    css() {
+    static singlePage() {
 
-        const styles = `
-            html, body {
-                padding: 0;
-                margin: 0;
-                color: #333;
-                font-family: sans-serif;
+        document.querySelector(".item-image img").addEventListener("click", function(e) {
+
+            let el = e.target;
+            if (el.classList.contains("full")) {
+                el.classList.remove("full");
+            } else {
+                el.classList.add("full");
             }
 
-            body.filter {
-                overflow: hidden;
-            }
+        });
 
-            .jlist-wrap {
-                display: flex;
-                flex-direction: column;
-                max-width: 80rem;
-                margin: 0 auto;
-            }
+        document.querySelector(".video-link").addEventListener("click", function(e) {
 
-            .jlist-wrap header {
-                display: flex;
-                flex-direction: row;
-                padding: .5rem;
-                gap: 30px;
-                align-items: center;
-                box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
-                top: 0;
-                position: sticky;
-                background: #FFF;
-                z-index: 2;
-            }
+            e.preventDefault();
 
-            .jlist-wrap h1 {
-                padding: 0;
-                margin: 0;
-                font-size: large;
-            }
-
-            .jlist-wrap h1 a {
-                text-decoration: none;
-                color: #333;
-                font-size: 1.5rem;
-            }
-
-            .jlist-wrap input.searchbox {
-                background-color: rgb(244,244,245);
-                border: 1px solid;
-                border-radius: .25rem;
-                padding: 0 5px;
-                margin: 0;
-                border-color: #6b7280;
-                appearance: none;
-                height: 30px;
-            }
-
-            .jlist-wrap aside {
-                max-width: 15rem;
-                height: calc(100vh - 30px);
-                padding: .5rem;
-                position: sticky;
-                scrollbar-width: none;
-                overflow-y: auto;
-                box-sizing: border-box;
-                user-select: none;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                top: 3rem;
-                background: #FFF;
-                z-index: 1;
-                border-right: .5px solid rgba(0,0,0,0.05);
-            }
-
-            .jlist-wrap .grid {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-                grid-template-rows: auto 1fr;
-                display: grid;
-                box-sizing: border-box;
-                width: 100%;
-            }
-
-            .jlist-wrap .aside-item {
-                margin: .5rem 0 .5rem 0;
-            }
-
-            .jlist-wrap aside input,
-            .jlist-wrap aside select {
-                padding: .25rem;
-                font-size: .75rem;
-                line-height: 1rem;
-                border-radius: .125rem;
-                width: 100%;
-                appearance: none;
-                background-color: #fff;
-                border-color: #6b7280;
-                border-width: 1px;
-            }
-
-            .jlist-wrap input[type="checkbox"] {
-                position: relative;
-                cursor: pointer;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                border: none;
-                padding: 0;
-                margin: 0;
-                outline: none;
-                width: 16px;
-                flex: 0 0 16px;
-                height: 16px;
-                background-color: #CCC;
-                border-radius: 5px;
-            }
-
-            .jlist-wrap input[type="checkbox"]:checked::after {
-                content: "";
-                position: absolute;
-                left: 2px;
-                top: 2px;
-                right: 2px;
-                bottom: 2px;
-                background-color: #333;
-                border: none;
-                border-radius: 4px;
-            }
-
-            .jlist-wrap label {
-                margin-bottom: 5px;
-                display: inline-block;
-                margin-right: 10px;
-            }
-
-            .jlist-wrap label > h3 {
-                margin: 0;
-                line-height: normal;
-                font-size: medium;
-                margin-top: -3px;
-            }
-
-            .jlist-wrap .tag--item {
-                display: inline-block;
-                margin-bottom: .5rem;
-                margin-right: .5rem;
-                border: 1px solid #333;
-                padding: 5px;
-                box-sizing: border-box;
-                border-radius: .125rem;
-                cursor: pointer;
-                font-size: 14px;
-                font-weight: 100;
-            }
-
-            .jlist-wrap .tag--item:hover {
-                background-color: rgb(228,228,231);
-            }
-
-            .jlist-wrap .tag--item.active {
-                background-color: rgb(82,82,91);
-                border-color: rgb(82,82,91);
-                color: #FFF;
-            }
-
-            .jlist-wrap .category--item {
-                width: 100%;
-            }
-
-            .jlist-wrap .main {
-                display: flex;
-                flex-direction: row;
-            }
-
-            .jlist-wrap .grid-item {
-                padding: .5rem;
-                box-sizing: border-box;
-                width: 100%;
-                border: .5px solid rgba(0,0,0,0.05);
-            }
-
-            .jlist-wrap .grid-item img {
-                width: 100%;
-                height: 250px;
-                min-height: 250px;
-                background: rgba(0,0,0,0.1);
-                text-indent: 1000px;
-                display: block;
-                object-fit: cover;
-            }
-
-            .jlist-wrap .grid-item a {
-                color: #333;
-                text-decoration: none;
-                display: flex;
-                flex-direction: column;
-                gap: .5rem;
-            }
-
-            .jlist-wrap .grid-item h4 {
-                margin: 0;
-                font-size: 14px;
-                font-weight: 100;
-                padding: 3px;
-                border-left: 1px solid;
-                border-bottom: 1px solid;
-                display: inline-block;
-            }
-
-            .jlist-wrap .grid-item h2 {
-                margin: 10px 0 0 0;
-                font-size: 15px;
-                text-transform: uppercase;
-                font-weight: bolder;
-            }
-
-            .jlist-wrap .grid-item:hover {
-                background-color: rgb(228,228,231);
-            }
-
-            .jlist-wrap .descr {
-                font-weight: 100;
-                font-size: 14px;
-            }
-
-            .jlist-wrap .grid-wrap {
-                flex: 1;
-                position: relative;
-            }
-
-            .jlist-wrap .item-wrap {
-                position: fixed;
-                width: calc(100% - 15px);
-                height: calc(100dvh - 60px);
-                background: #FFF;
-                z-index: 2;
-                display: none;
-                box-sizing: border-box;
-                flex-direction: column;
-                border: .5px solid rgba(0, 0, 0, 0.05);
-                max-width: 80rem;
-            }
-
-            .single .jlist-wrap .item-wrap {
-                display: flex;
-            }
-
-            .single .jlist-wrap .grid-wrap:before {
-                content: '';
-                width: 100%;
-                height: 100%;
-                background: #FFF;
-                display: block;
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-
-            .jlist-wrap .item-wrap > span {
-                font-size: 1em;
-                position: absolute;
-                right: 15px;
-                cursor: pointer;
-                z-index: 2;
-                background: #FFF;
-                top: 15px;
-                color: #333;
-                width: 32px;
-                height: 32px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                line-height: 32px;
-            }
-
-            .jlist-wrap .grid-item > a {
-                pointer-events: none;
-            }
-
-            .jlist-wrap .item-inner {
-                height: auto;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                position: relative;
-                padding: 15px;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                min-height: calc(100dvh - 60px);
-            }
-
-            .jlist-wrap .item-inner > div {
-                position: relative;
-                z-index: 2;
-                color: #FFF;
-                max-width: 80%;
-            }
-
-            .jlist-wrap .item-description {
-                font-size: 2em;
-                font-weight: 100;
-            }
-
-            .jlist-wrap .item-notes {
-                font-weight: 100;
-            }
-
-            .jlist-wrap .item-inner:before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0.7);
-                backdrop-filter: blur(5px);
-                z-index: 1;
-            }
-
-            .jlist-wrap .item-name {
-                font-size: 3rem;
-                color: #FFF;
-            }
-
-            .jlist-wrap ul.values-list {
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: row;
-                gap: 10px;
-            }
-
-            .jlist-wrap ul.values-list li {
-                list-style: none;
-                border: 1px solid;
-                padding: 0 5px;
-            }
-
-            .jlist-wrap label {
-                margin-bottom: 5px;
-                display: inline-block;
-                color: #FFF;
-                padding: 0;
-                width: 100%;
-                border-bottom: .5px solid #FFF;
-                font-weight: 600;
-            }
-
-            .jlist-wrap .item-wrap a {
-                color: #FFF;
-                text-decoration: blink;
-                margin-top: 0;
-                display: inline-block;
-                text-decoration: underline;
-            }
-
-            .jlist-wrap .item-wrap .item-link a {
-                color: #FFF;
-                text-decoration: blink;
-                border: 1px solid;
-                padding: 15px;
-                margin-top: 15px;
-                display: inline-block;
-                width: 100px;
-                text-align: center;
-                background: #FFF;
-                color: #333;
-            }
-
-            .jlist-wrap .item-field.item-link {
-                position: absolute !important;
-                bottom: 30px;
-                left: 50%;
-                margin-left: -50px;
-            }
-
-            .jlist-wrap ul.artifacts-list {
-                padding: 0px;
-                margin: 5px 0 0 0;
-            }
-
-            .jlist-wrap ul.artifacts-list li {
-                list-style: none;
-                margin-bottom: 5px;
-            }
-
-            .jlist-wrap span.plus,
-            .jlist-wrap span.minus {
-                width: 16px;
-                height: 16px;
-                background: #FFF;
-                color: #333;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                float: left;
-                margin: 2px 9px 0 0;
-                line-height: 16px;
-            }
-
-            .jlist-wrap span.minus {
-                background: transparent;
-                color: #FFF;
-                border: 1px solid;
-                box-sizing: border-box;
-            }
-
-            .jlist-wrap .aside-filter {
-                padding: 5px 0;
-            }
-
-            .filtered .jlist-wrap .filter-clear {
-                display: inherit;
-                background: transparent;
-                color: #333;
-                border: 1px solid;
-                margin-top: 5px;
-            }
-
-            .jlist-wrap button {
-                background: #333;
-                color: #FFF;
-                border: none;
-                padding: 10px 5px;
-                width: auto;
-                display: inline-block;
-                width: 100%;
-            }
-
-            .jlist-wrap .filter-clear {
-                display: none;
-            }
-
-            .jlist-wrap .filter-ok {
-                display: none;
-            }
-
-            .jlist-wrap span.filter-toggle {
-                cursor: pointer;
-                text-decoration: underline;
-                position: absolute;
-                right: 15px;
-                display: none;
-            }
-
-            @media (max-width: 767px) {
-
-                .jlist-wrap .main {
-                    flex-direction: column;
-                }
-
-                .jlist-wrap aside {
-                    max-width: none;
-                    width: 100%;
-                    position: fixed;
-                    height: 100vh;
-                    top: 0;
-                    z-index: 1;
-                    background: #FAFAFA;
-                    display: none;
-                }
-
-                .filter .jlist-wrap aside {
-                    display: block;
-                    margin-top: 20px;
-                }
-
-                .jlist-wrap .grid {
-                    grid-template-columns: repeat(1, minmax(0, 1fr));
-                }
-
-                .jlist-wrap .grid-item {
-                    padding: 1rem;
-                }
-
-                .jlist-wrap .aside-item {
-                    margin: .5rem 0 .5rem 0;
-                    padding: .5rem;
-                    background: #FFF;
-                    border-radius: .125rem;
-                }
-
-                .jlist-wrap .item-wrap {
-                    position: fixed;
-                    width: 100%;
-                    min-height: 100dvh;
-                    top: 0;
-                    overflow: auto;
-                    padding-bottom: 50px;
-                }
-
-                .jlist-wrap .item-inner > div {
-                    max-width: 100%;
-                }
-
-                .jlist-wrap .item-field.item-link {
-                    position: fixed !important;
-                    bottom: 0;
-                    left: 0;
-                    margin-left: 0;
-                    width: 100%;
-                    z-index: 3;
-                }
-
-                .jlist-wrap .item-wrap .item-link a {
-                    width: 100%;
-                    margin: 0;
-                    box-sizing: border-box;
-                }
-
-                .jlist-wrap .item-name {
-                    font-size: 2rem;
-                }
-
-                .jlist-wrap .item-description {
-                    font-size: 1em;
-                }
-
-                .jlist-wrap .filter-ok {
-                    display: inline-block;
-                }
-
-                .jlist-wrap .item-wrap > span {
-                    right: 0;
-                    top: 0;
-                    position: fixed;
-                }
-
-                .jlist-wrap span.filter-toggle {
-                    display: inline-block;
-                }
-
-                .jlist-wrap .item-inner {
-                    min-height: 100dvh;
-                }
-
-            }
-        `;
-
-        const styleSheet = document.createElement("style");
-        styleSheet.type = "text/css";
-        styleSheet.innerText = styles;
-        document.head.appendChild(styleSheet);
+        });
 
     }
 
