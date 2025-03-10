@@ -2,13 +2,15 @@
 layout: none
 ---
 
-<body id="page">
-<header>
-</header>
-<main>
-    <div class="wrapper">
-        <div class="content">
-            {{ content }}
+{% include header.html %}
+
+<body id="post">
+    <div class="jlist-wrap single-page">
+        <div class="item-wrap" style="display: flex;">
+            <div class="item-inner">
+                <div class="item-name">{{ page.title }}</div>
+                <div class="item-field item-notes">{{ content }}</div>
+            </div>
         </div>
     </div>
-</main>
+</body>
