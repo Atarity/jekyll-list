@@ -11,7 +11,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: DIY synths DB
+title: DIY synths database
 description: >- # this means to ignore newlines until "baseurl:"
   Curated collection of DIY-friendly hardware synthesizers and related musical equipment you can build on your own. All open source.
 
@@ -20,6 +20,7 @@ db: db.json
 pics: pics/
 header_pic: pics/meta/header.jpeg
 accent_color: ffcc5f
+favicon_text: DIY
 
 # Build settings
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

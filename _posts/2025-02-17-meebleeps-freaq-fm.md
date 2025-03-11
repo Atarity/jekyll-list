@@ -37,20 +37,3 @@ tags: [Arduino,Digital,Monophonic,Sequencer]
 level: Newbe
 ---
 
-{{page.description}}
-
-![{{page.name}}]({{page.pic}})
-
-{{page.notes}}
-
-### All DB data
-- Name: **{{page.name}}**
-- Author: **{{page.author}}**
-- Link: [{{page.link}}]({{page.link}})
-- Demo: [{{page.demo}}]({{page.demo}})
-- Picture: [{{page.pic}}]({{page.pic}})
-- Description: **{{page.description}}**
-- Notes: **{{page.notes}}**
-- Artifacts: **{{page.artifacts}}**
-- Tags: **{{page.tags}}**
-- Level: **{{page.level}}**

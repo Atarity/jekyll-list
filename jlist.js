@@ -44,9 +44,9 @@ class JList {
 
         this.copyright = this.copyright.replace("{Y}", new Date().getFullYear());
 
-        let footer = document.createElement("footer");
-        footer.innerHTML = this.copyright;
-        this.wrap.appendChild(footer);
+        //let footer = document.createElement("footer");
+        //footer.innerHTML = this.copyright;
+        //this.wrap.appendChild(footer);
 
         document.querySelectorAll(".title").forEach((el) => {
 
@@ -62,7 +62,7 @@ class JList {
 
         document.addEventListener('db-loaded', () => { this.aside() });
 
-        this.favicon(this.nameShort);
+        JList.favicon(this.nameShort);
         this.DB_load();
 
         window.addEventListener('scroll', () => this.handleScroll());
@@ -258,7 +258,7 @@ class JList {
 
     }
 
-    favicon(textIn = '', background = '#ffffff', color = '#333333') {
+    static favicon(textIn = '', background = '#ffffff', color = '#333333') {
 
         if (!textIn) { textIn = this.name.substring(0,1); }
 

@@ -23,10 +23,10 @@ html, body {
 .jlist-wrap header {
     display: flex;
     flex-direction: row;
-    padding: .5rem;
+    padding: 1.0rem .5rem;
     gap: 30px;
     align-items: center;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / .05);
     top: 0;
     position: sticky;
     background: #FFF;
@@ -48,10 +48,10 @@ html, body {
 .jlist-wrap input.searchbox {
     background-color: rgb(244,244,245);
     border: 1px solid;
-    border-radius: .25rem;
+    border-radius: .125rem;
     padding: 0 5px;
     margin: 0;
-    border-color: #6b7280;
+    border-color: #333;
     appearance: none;
     height: 30px;
 }
@@ -517,10 +517,11 @@ html, body {
     font-size: 1.5em;
     position: relative;
     z-index: 2;
+    text-transform: uppercase;
 }
 
 .jlist-header-img p {
-    width: 300px;
+    width: 500px;
     max-width: 100%;
     position: relative;
     z-index: 2;
@@ -560,13 +561,14 @@ p.nothing {
 footer {
     position: fixed;
     bottom: 0;
-    z-index: 10;
+    z-index: 12;
     width: 100%;
-    background: #FFF;
-    padding: 5px 15px;
-    text-align: right;
+    background: #F7F7F7;
+    padding: 15px 30px;
+    text-align: left;
     box-sizing: border-box;
     font-family: monospace;
+    font-size: 85%;
     color: rgba(0,0,0,0.7);
     border-top: .5px solid rgba(0,0,0,0.05);
 }
