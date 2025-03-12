@@ -158,7 +158,7 @@ class JList {
                 m = this.menu[m];
 
                 let li = document.createElement("li");
-                li.innerHTML = `<li><a href="${m.url}" target="_blank">${m.name}</a></li>`;
+                li.innerHTML = `<li><a href="${m.url}" target="${m.target}">${m.name}</a></li>`;
 
                 ul.appendChild(li);
 
@@ -442,7 +442,7 @@ class JList {
         let item = this._db[0],
         fieldsQty = 0, field, f, div;
 
-        document.querySelector(".total").textContent = this._db.length;
+        //document.querySelector(".total").textContent = this._db.length;
 
         this.asideEl.innerHTML = '';
 
@@ -528,7 +528,7 @@ class JList {
             }
 
             element.addEventListener("click", hintToggle);
-            element.addEventListener("mouseover", hintToggle);
+            //element.addEventListener("mouseover", hintToggle);
             element.addEventListener("mouseout", hintToggleOff);
 
         });

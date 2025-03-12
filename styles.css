@@ -54,12 +54,14 @@ html, body {
     border-color: #333;
     appearance: none;
     height: 30px;
+    flex: 0 1 13.5rem;
+    min-width: 8rem;
 }
 
 .jlist-wrap aside {
     max-width: 15rem;
     height: calc(100vh - 30px);
-    padding: .5rem;
+    padding: .5rem 1rem .5rem .5rem;
     position: sticky;
     scrollbar-width: none;
     overflow-y: auto;
@@ -315,6 +317,7 @@ html, body {
 .jlist-wrap .item-description {
     font-size: 2em;
     font-weight: 100;
+    margin-top: -10px;
 }
 
 .jlist-wrap .item-notes {
@@ -599,11 +602,12 @@ footer {
 
 .jlist-wrap h3 {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .jlist-wrap h3 span {
-    position: absolute;
-    right: 0;
     font-size: 10px;
     width: 15px;
     height: 15px;
@@ -695,8 +699,9 @@ footer {
 
     .filter .jlist-wrap aside {
         display: block;
-        margin-top: 45px;
+        margin-top: 55px;
         z-index: 100;
+        padding: .5rem;
     }
 
     .jlist-wrap .grid {
@@ -804,6 +809,11 @@ footer {
 
     footer {
         text-align: center;
+    }
+
+    .jlist-wrap input.searchbox {
+        flex: 0 1 10rem;
+        min-width: 8rem;
     }
 
 }
