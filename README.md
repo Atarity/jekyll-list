@@ -1,1 +1,5 @@
+---
+layout: none
+---
+
 # jekyll-list

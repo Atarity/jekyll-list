@@ -7,15 +7,10 @@ layout: none
 <body id="post">
     <div class="jlist-wrap single-page">
         <div class="item-wrap" style="display: flex;">
+            <span><a href="{{ site.baseurl }}/">← back</a></span>
             <div class="item-inner">
                 <div class="item-name">{{ page.name }}</div>
                 <div class="item-field item-description">{{ page.description }}</div>
-
-                <div class="item-field item-image">
-                    <img src="{{ page.pic }}" />
-                </div>
-
-                <div class="item-field item-notes">{{ page.notes }}</div>
 
                 <div class="item-field item-tags">
                     <ul class="values-list">
@@ -24,6 +19,17 @@ layout: none
                     {% endfor %}
                     </ul>
                 </div>
+
+                <div class="item-field item-image">
+                    <img src="{{ page.pic }}" />
+                </div>
+
+                <div class="item-field item-notes">{{ page.notes }}</div>
+
+                {% assign cont = page.content | strip %}
+                {% if cont.size > 0 %}
+                    <div class="item-field item-content">{{ page.content }}</div>
+                {% endif %}
 
                 <div class="item-field item-link">
                     <a href="{{ page.link }}" target="_blank">Go to project</a>

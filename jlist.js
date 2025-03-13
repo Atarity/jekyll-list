@@ -665,7 +665,10 @@ class JList {
 
         if (document.body.classList.contains("single")) { return false; }
 
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        const footer = document.querySelector("footer");
+        const footerHeight = footer ? footer.offsetHeight : 0;
+
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - footerHeight)) {
             if (this.currentPage < this.totalPages) {
                 this.loadNextPage();
             }
@@ -831,7 +834,7 @@ class JList {
 
         } else {
 
-            this.gridEl.innerHTML = '<p>&nbsp;</p><p class="nothing">Nothing found</p><p>&nbsp;</p>';
+            this.gridEl.innerHTML = '<p>&nbsp;</p><p class="nothing">nothing found</p><p>&nbsp;</p>';
 
         }
 
