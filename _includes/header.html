@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="yes" name="mobile-web-app-capable">
-    <title>{{ page.title }}</title>
+    {% if page.layout == "post" or page.layout == "page" %}
+        <title>{{ page.title }} | {{ site.title }}</title>
+    {% else %}
+        <title>{{ page.title }}</title>
+    {% endif %}
     <link rel="stylesheet" media="all" href="{{ site.baseurl }}/styles.css?v=11" />
 </head>

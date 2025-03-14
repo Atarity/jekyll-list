@@ -9,8 +9,8 @@ author: Wolfgang Spahn
 link: https://paperpcb.dernulleffekt.de/doku.php?id=paper_bits:paper_bits_main
 demo: https://www.youtube.com/watch?v=4CEhR68YwA8
 pic: ../pics/paper-bits.jpg
-description: "Small, modular synthesiser system. Voltage controlled, stripboard compatible."
-notes: "Currently, there are 19 modules published that can be put together in different ways."
+description: "Small, modular synthesizer system. Voltage controlled, stripboard compatible."
+notes: "Its simple design, accessible interface as well low price, offer a powerful sound tool dedicated to learning, experimenting, and playing. There are 19 modules published that can be put together in different ways and patched."
 artifacts:
   - Schematic: true
   - PCB: false

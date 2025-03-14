@@ -328,7 +328,7 @@ html, body {
     font-weight: 100;
 }
 
-.jlist-wrap .item-content > p {
+.jlist-wrap .item-content > p, ul {
     font-weight: 100;
     margin: 0 0 1em 0;
 }

@@ -9,15 +9,15 @@ author: Monome
 link: https://github.com/monome/norns-shield
 demo: https://www.youtube.com/watch?v=E5XIEVon4Ak
 pic: ../pics/norns-shield.jpg
-description: "Norns is an open, dynamic instrument creation platform and musical computer. "
-notes: "Shield is a DIY circuit which extends a normal Raspberry Pi, turning it into a norns. "
+description: "Dynamic instrument, creation platform and musical computer "
+notes: "Through scripts written in Lua, you can define the behavior of its on-board rotary controls, keys, and screen, as well as any connected devices. Through a large number of pre-written libraries, Norns offers a platform for charting new possibilities in music-making. "
 artifacts:
   - Schematic: true
   - PCB: true
   - BOM: true
   - FW: true
   - Docs: true
-  - Enclosure: false
+  - Enclosure: true
 tags: [Raspberry,Digital,Kit,MIDI]
 level: Intermediate
 ---

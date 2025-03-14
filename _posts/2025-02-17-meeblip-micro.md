@@ -9,8 +9,8 @@ author: Meeblip
 link: https://github.com/MeeBlip/meeblip-circuits
 demo: https://www.youtube.com/watch?v=s0zFMcL7Ej8
 pic: ../pics/meeblip-micro.jpg
-description: "Hackable monophonic synth based on atmega32."
-notes: "Normally Micro has no it is own controls. It should be controlled by MIDI. Meeblip SE is quite the same synth with physical controls."
+description: "Hackable monophonic synth"
+notes: "monophonic digital synthesizer built with through-hole components. It’s perfect for beginners who are just learning to solder. The PCB is so simple that there wasn’t even room for knobs or buttons—the device is entirely controlled via MIDI."
 artifacts:
   - Schematic: true
   - PCB: true
@@ -22,3 +22,4 @@ tags: [Monophonic,Digital,AVR,MIDI]
 level: Newbe
 ---
 
+[Meeblip SE]({{site.baseurl}}/synths/meeblip-se) is quite the same synth with physical controls.

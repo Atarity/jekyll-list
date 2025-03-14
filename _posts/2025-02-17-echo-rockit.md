@@ -6,11 +6,11 @@ categories: synths
 
 name: Echo Rockit
 author: Ray Wilson
-link: http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871
+link: https://musicfromouterspace.com/index.php?CATPARTNO=PCBMFECHONONE01&PROJARG=ECHOROCKIT%2FECHOROCKIT.php&MAINTAB=SYNTHDIY&SONGID=NONE&VPW=1331&VPH=1233
 demo: https://www.youtube.com/watch?v=BBRA-ZliXaA
 pic: ../pics/echo-rockit.jpg
-description: "Small, portable synth / effect processor."
-notes: "The device is somehow similar to Korg Monotron Delay, but it has more modulation options."
+description: "Compact synth/effect processor"
+notes: "The device is somehow similar to Korg Monotron Delay, but it has more modulation options. Based on digital delay PT2399 IC."
 artifacts:
   - Schematic: true
   - PCB: false
@@ -18,7 +18,7 @@ artifacts:
   - FW: false
   - Docs: true
   - Enclosure: false
-tags: [Analog,Monophonic]
+tags: [Analog,Monophonic,Modular]
 level: Intermediate
 ---
 

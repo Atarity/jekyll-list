@@ -6,11 +6,23 @@ categories: synths
 
 name: Sound Lab Mini-Synth MkII
 author: Ray Wilson
-link: http://musicfromouterspace.com/index.php?MAINTAB=SYNTHDIY&VPW=1910&VPH=871
+link: https://musicfromouterspace.com/index.php?CATPARTNO=SLMSMARKIIPCB&PROJARG=SOUNDLABMINIMARKII/page1.php&MAINTAB=SYNTHDIY&SONGID=NONE&VPW=1071&VPH=1229
 demo: https://www.youtube.com/watch?v=-ijNzWQH0dk
 pic: ../pics/sound-lab-mini-synth-mkii.jpg
-description: "Full analog Ray Wilson's synth. Descendant of Sound Lab Mini-Synth."
-notes: "'- Two Musically Accurate VCOs With 1V/Octave Tracking
+description: "Full analog descendant of Sound Lab Mini-Synth"
+notes: "Analog synth packed with features you'll love."
+artifacts:
+  - Schematic: true
+  - PCB: false
+  - BOM: true
+  - FW: false
+  - Docs: true
+  - Enclosure: false
+tags: [Analog,Monophonic]
+level: Advanced
+---
+
+- Two Musically Accurate VCOs With 1V/Octave Tracking
 - White Noise Generator
 - Audio Mixer With External Input
 - State Variable VCF Low-Pass & Band Pass Response
@@ -25,15 +37,3 @@ notes: "'- Two Musically Accurate VCOs With 1V/Octave Tracking
 - Patchable Sample And Hold
 - Two Repeat Gate Generators for AD/AR Generators
 - AD/AR Generators Normalized For S&H Triggering
-"
-artifacts:
-  - Schematic: true
-  - PCB: false
-  - BOM: true
-  - FW: false
-  - Docs: true
-  - Enclosure: false
-tags: [Analog,Monophonic]
-level: Advanced
----
-

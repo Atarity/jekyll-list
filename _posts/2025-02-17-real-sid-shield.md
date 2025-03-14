@@ -9,8 +9,8 @@ author: A.T.Brask
 link: https://github.com/emceha/RealSIDShield
 demo: https://www.youtube.com/watch?v=aWzvNC8BdNY
 pic: ../pics/real-sid-shield.jpg
-description: "Digital interface to SID chip (Commodore 64)."
-notes: "An Arduino shield that makes it easy to use a MOS Technology 6581/8580 SID chip (the famous C64 sound chip)"
+description: "Digital interface to SID chip of Commodore 64"
+notes: "An Arduino shield that makes it easy to use a MOS Technology 6581/8580 SID chip used for famous C64 sound."
 artifacts:
   - Schematic: true
   - PCB: true
